@@ -2,78 +2,102 @@ from sys import argv
 import math
 import uuid
 import random as rn
+
 from agent import Agent
-from simulation import simulation
+from Locations.home import Home
+from Locations.office import Office
+from simulator import Simulator
 
 
-#main to initialize the simulation
-# python3 main.py True 1000 20 30 0.05 21 14 30 0.01 0.036
+RUN_FROM_TERMINAL = False
+
+"""
+Script to initialize the simulation
+Example code to run a simulation:
 # python3  main.py <Contact tracing en> <#Agents> <#infected> <office_capacity> <mortality_rate> <# days sick> <# days in isolation> <# days simulated> <infecetion risk home> <infection risk work>
+# python3 main.py True 1000 20 30 0.05 21 14 30 0.01 0.036
+"""
+if RUN_FROM_TERMINAL:
+	enable_contact_tracing = bool(argv[1])									# Enable contact tracing
+	total_agents = int(argv[2])  											# Number of Agents
+	initially_infected_agents = int(argv[3])  								# Number of initially infected agents
+	initially_healthy_agents = total_agents - initially_infected_agents		# Number of initially healthy agents
+	office_capacity = int(argv[4])  										# Capacity of agents per office
+	mortality_rate = float(argv[5])  										# Mortality rate
+	total_days_sick = int(argv[6])  										# Number of days sick
+	days_until_symptoms = int(argv[7])  									# Number of days until symptoms
+	total_days_simulated = int(argv[8])  									# Number of days of simulation
+	risk_infection_home = float(argv[9])  									# Risk of infection at home
+	risk_infection_work = float(argv[10])  									# Risk of infection at work
 
-#number of Agents
-nrA = int(argv[2])
-#number of initially infected not quarantined agents
-iI = int(argv[3])
-#number of initially healthy agents
-iH = nrA - iI
-#number of offices (nr of agents div office_capacity)
-office_capacity = int(argv[4])
-nrO = math.ceil(nrA/office_capacity)
-#Mortality rate
-mr = float(argv[5])
-#number of days sick
-nrSDays = int(argv[6])
-#number of days isolation
-nrIDays = int(argv[7])
-#number of days
-nrDays = int(argv[8])
-#risk of infection at home
-rIH = float(argv[9])
-#risk of infection at work
-rIW = float(argv[10])
+else:  # ToDo: Put this in a YAML-file
+	enable_contact_tracing = True											# Enable contact tracing
+	total_agents = 1000                              						# Number of Agents
+	initially_infected_agents = 20  										# Number of initially infected agents
+	initially_healthy_agents = total_agents - initially_infected_agents  	# Number of initially healthy agents
+	office_capacity = 30  													# Capacity of agents per office
+	mortality_rate = 0.05  													# Mortality rate
+	total_days_sick = 14  													# Number of days sick
+	days_until_symptoms = 7  												# Number of days isolation
+	total_days_simulated = 50  												# Number of days of simulation
+	risk_infection_home = 0.1  												# Risk of infection at home
+	risk_infection_work = 0.036  											# Risk of infection at work
 
-#initialize agents
+# Initialize agents
+agent_array = []
 
-#loop creates list with IDs for every agent
-idArray = []
-print("-- Generating IDs --")
-for i in range(nrA):
-	idArray.append(uuid.uuid4().hex)
+print("-- Creating healthy agents --")
+for i in range(initially_healthy_agents):
+	id = uuid.uuid4().hex
+	agent = Agent(id, False, days_until_symptoms, total_days_sick, mortality_rate)
+	agent_array.append(agent)
 
-#Loop to create healthy agents
-print("-- creating healthy agents --")
-for i in range(iH):
-	idArray[i] = Agent(idArray[i],'H')
+print("-- Creating infected agents --")
+for i in range(initially_healthy_agents, total_agents):
+	id = uuid.uuid4().hex
+	agent = Agent(id, True, days_until_symptoms, total_days_sick, mortality_rate)
+	agent_array.append(agent)
 
-#Loop to create infected agents not 100%  sure this works
-print("-- infected healthy agents --")
-for i in range(iH, nrA):
-	idArray[i] = Agent(idArray[i],'I')
+# Shuffle the list to mix infected and healthy agents
+rn.shuffle(agent_array)
 
-#Loop to assign agents to households of 2
-print("-- assign agents to households of 2 --")
-counter = nrA
-while counter >1:
-	#generates a random integer in range 0, nrA
-	i = rn.randrange(nrA)
-	j = rn.randrange(nrA)
-	if i != j and len(idArray[i].household) == 1 and len(idArray[j].household) == 1:
-		idArray[i].household.append(idArray[j].id)
-		idArray[j].household.append(idArray[i].id)
-		counter-=2
-print("-- assign agents to offices of "+ str(office_capacity) +" --")
-#Loop assigns agents to an office
-for i in idArray:
-	while i.office == 0:
-		j = rn.randrange(nrO)
-		if  len(list(filter(lambda x : x.office == j+1, idArray))) < office_capacity:
-			i.office = j+1
-#print all agents initialized
-#for i in range(nrA):
-#	print(i)
-#	print("Agent id: "+ str(idArray[i].id) + " Health: "+ str(idArray[i].health) + " office: " + str(idArray[i].office) + " region: " + str(idArray[i].region) + " household: ")
-#	print(idArray[i].household)
-#for i in range(nrO):
-#	print( "Office " + str(i+1) + "has capacity"+str(len(list(filter(lambda x : x.office == i+1, idArray)))))
-#start simulation
-simulation(argv[1],nrA, iI, iH, office_capacity, nrO, mr, nrSDays, nrIDays, nrDays, rIH, rIW, idArray)
+
+# Create locations
+# We start with households of size 5 and offices of size 30, but this should be improved later
+locations = {}
+house_capacity = 5  # TODO: Replace with input
+number_of_homes = math.ceil(total_agents / house_capacity)
+
+number_of_offices = math.ceil(total_agents / office_capacity)
+locations["Homes"] = [Home(house_capacity, risk_infection_home) for _ in range(number_of_homes)]
+locations["Offices"] = [Office(office_capacity, risk_infection_work) for _ in range(number_of_offices)]
+
+print("-- Assign agents to households --")
+home_index = 0
+current_home = locations["Homes"][home_index]
+for agent in agent_array:
+	if current_home.full_capacity():
+		home_index += 1
+		current_home = locations["Homes"][home_index]
+
+	current_home.add_agent(agent)
+	agent.set_home(current_home)
+
+# Shuffle again to mix households
+rn.shuffle(agent_array)
+
+print("-- Assign agents to offices --")
+office_index = 0
+current_office = locations["Offices"][office_index]
+for agent in agent_array:
+	if current_office.full_capacity():
+		office_index += 1
+		current_office = locations["Offices"][office_index]
+
+	current_office.add_agent(agent)
+	agent.set_office(current_office)
+
+simulator = Simulator(enable_contact_tracing, locations, agent_array)
+
+while simulator.current_day <= total_days_simulated:
+	simulator.step()
