@@ -33,8 +33,10 @@ Select the data set https://www.kaggle.com/imdevskp/corona-virus-report
 Understand the data, to explore suitability for analysis
 
 ### Task 1.2 Load data into Tableau
-create  new workbook
-In the popup titled connect to data select files and upload it.
+To load data into tableau follow the follow steps
+1. create  new workbook
+2. Click on the File menu and select open
+3. Navigate to the file location and import it.
 
 
 ### Task 1.3 Verifying that data was correctly loaded
