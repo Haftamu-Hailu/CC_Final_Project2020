@@ -19,6 +19,21 @@ The first step is to acquire suitable data, for our purposes we selected the dat
 In a second step we will familiarize the student with the basic functionality and user interface of the tool, uploading the data and generating basic visualizations.
 The third step a guide in deeper analysis generating more complex visualizations based on thorough analysis of the data.
 
+# Tableau Product Suite
+Tableau provides many tools which are important for various user cases:
+
+- Tableau Desktop: This product is made for individual use.
+- Tableau Server:  This server edition is designed to collaborately work on a given project
+- Tableau Online: Tableau provides a cloud platform for Business Intelligence solutions
+- Tableau Reader: Let you read files saved in Tableau Desktop.
+- Tableau Public: This is a light verison of Tableau Desktop
+
+# Tableau features
+
+# Tableau Data formats
+
+
+
 ## Task 0
 
 ### Create Trial account
