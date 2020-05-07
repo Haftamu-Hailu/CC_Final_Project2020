@@ -53,7 +53,16 @@ Perform your analysis based your data
 ### Task 1.4 Transforming the data so that it fits your purpose
 Apply normalizations
 
-### Task 1.5 Combine Data from different sources
+### Task 1.5 Combine Data from different sources:
+If your analysis depends on single data source, this step may not be necessary. But If you are doing on multiple files you have to follow the provided steps.
+1. Drop the the source files into working book
+2. Specify the columns to join on 
+3. Join the files by using various join operation
+  - Full Join
+  - Outer Join
+  - Right Join
+  - left Join
+
 
 ## Task 2 Create a Visualization
 
