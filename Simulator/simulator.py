@@ -1,5 +1,5 @@
 import random as rn
-
+from saver import Saver
 
 class Simulator:
     def __init__(self, enable_contact_tracing, locations, agent_array):
@@ -25,7 +25,7 @@ class Simulator:
         # With contact tracing, isolate everyone at the locations an agent with symptoms belongs to
         if self.enable_contact_tracing:
             for agent in self.agent_array:
-                if not agent.is_isolated and agent.has_symptoms:
+                if agent.has_symptoms:
                     agent.home.isolate_agents(self.current_day)
                     agent.office.isolate_agents(self.current_day)
 
@@ -48,12 +48,16 @@ class Simulator:
 
 
 def simulate_infections(location, current_day):
-    agents = location.get_agents()
-    for agent in agents:
-        if agent.is_infected:
-            for other_agent in agents:
-                if other_agent is agent or not other_agent.can_get_infected():
-                    break
+    not_isolated = lambda agent: not agent.is_isolated
+    is_infected = lambda agent: agent.is_infected
+    can_get_infected = lambda agent: not agent.is_infected and not agent.has_been_infected
+
+    agents = list(filter(not_isolated, location.get_agents()))
+    infected_agents = list(filter(is_infected, agents))
+    healthy_agents = list(filter(can_get_infected, agents))
+    for agent in infected_agents:
+        for other_agent in healthy_agents:
+            if other_agent.can_get_infected():
                 infected = gets_infected(location)
                 if infected:
                     other_agent.set_infected(current_day)

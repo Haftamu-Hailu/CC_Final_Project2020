@@ -5,12 +5,12 @@ class Agent:
 		self.id = id
 
 		self.is_alive = True
-		self.is_infected = is_infected
-		self.has_been_infected = is_infected
 		self.has_symptoms = False
 		self.is_isolated = False
-		self.day_infected = float("-inf")
+		self.is_infected = is_infected
+		self.has_been_infected = is_infected
 
+		self.day_infected = 0 if is_infected else float("-inf")
 		self.day_isolated = float("-inf")
 
 		self.days_until_symptoms = days_until_symptoms

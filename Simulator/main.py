@@ -2,12 +2,13 @@ from sys import argv
 import math
 import uuid
 import random as rn
+import matplotlib.pyplot as plt
 
 from agent import Agent
 from Locations.home import Home
 from Locations.office import Office
 from simulator import Simulator
-
+from collections import defaultdict
 
 RUN_FROM_TERMINAL = False
 
@@ -31,17 +32,17 @@ if RUN_FROM_TERMINAL:
 	risk_infection_work = float(argv[10])  									# Risk of infection at work
 
 else:  # ToDo: Put this in a YAML-file
-	enable_contact_tracing = True											# Enable contact tracing
-	total_agents = 1000                              						# Number of Agents
+	enable_contact_tracing = False											# Enable contact tracing
+	total_agents = 10000                              						# Number of Agents
 	initially_infected_agents = 20  										# Number of initially infected agents
 	initially_healthy_agents = total_agents - initially_infected_agents  	# Number of initially healthy agents
 	office_capacity = 30  													# Capacity of agents per office
 	mortality_rate = 0.05  													# Mortality rate
 	total_days_sick = 14  													# Number of days sick
 	days_until_symptoms = 7  												# Number of days isolation
-	total_days_simulated = 50  												# Number of days of simulation
-	risk_infection_home = 0.1  												# Risk of infection at home
-	risk_infection_work = 0.036  											# Risk of infection at work
+	total_days_simulated = 14  												# Number of days of simulation
+	risk_infection_home = 0.02  												# Risk of infection at home
+	risk_infection_work = 0.02  											# Risk of infection at work
 
 # Initialize agents
 agent_array = []
@@ -63,7 +64,7 @@ rn.shuffle(agent_array)
 
 
 # Create locations
-# We start with households of size 5 and offices of size 30, but this should be improved later
+# TODO: We start with households of size 5 and offices of size 30, but this should be improved later
 locations = {}
 house_capacity = 5  # TODO: Replace with input
 number_of_homes = math.ceil(total_agents / house_capacity)
