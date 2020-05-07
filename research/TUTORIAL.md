@@ -30,7 +30,7 @@ Tableau provides many tools which are important for various user cases:
 
 # Tableau features
 
-# Tableau Data formats
+# Tableau Data Sources
 
 
 
