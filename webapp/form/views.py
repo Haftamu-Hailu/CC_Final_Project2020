@@ -1,6 +1,6 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 from form.models import Simulator
+from simulator.main import start_simulation
 
 
 def home(request):
@@ -9,6 +9,7 @@ def home(request):
 
 def simulatorSetUp(request):
     simulator = Simulator()
-    status = simulator.get_initial_data(request.POST)
-    return HttpResponse('', status=status)
+    initial_data = simulator.get_initial_data(request.POST)
+    status, results = start_simulation(initial_data)
+    return render(request, 'index.html', {'items': results})
 
