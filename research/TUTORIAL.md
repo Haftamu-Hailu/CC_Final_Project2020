@@ -29,14 +29,17 @@ Go to the [Tableau](https://www.tableau.com/products/cloud-bi?openExternal=true#
 
 ### Task 1.1 Locate the data
 Access website https://www.kaggle.com/ 
-Select the data set
+Select the data set https://www.kaggle.com/imdevskp/corona-virus-report
 Understand the data, to explore suitability for analysis
 
 ### Task 1.2 Load data into Tableau
-Click on the file icon
-Open and import
+create  new workbook
+In the popup titled connect to data select files and upload it.
+
 
 ### Task 1.3 Verifying that data was correctly loaded
+
+
 
 ### Task 1.4 Is the data suitable for analysis?
 Choose the type of analysis you want to do
@@ -44,6 +47,8 @@ Check the data(wide data or skinny data)
   Skinny data data with few columns many lines
   Wide data data with many columns fewer lines
 Perform your analysis based your data
+
+
 
 ### Task 1.4 Transforming the data so that it fits your purpose
 Apply normalizations
