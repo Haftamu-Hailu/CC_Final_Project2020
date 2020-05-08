@@ -132,6 +132,7 @@ Steps
 1.	Drag and drop required dimensions and measures into the rows and columns section
 2.	Drag and drop country into the filter section and select US and show the filter 
 3.	Drag and drop states/province  into the cards  color section and show the filter
+![](/research/Images/Trend_US_State.PNG)
 
 ## Task 4 Create a Dashboard
 We can combine multiple visualizations as a dashboard.
