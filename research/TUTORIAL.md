@@ -95,7 +95,9 @@ The most widely used graphs and charts are<br/>
 -	Scatter plot- is important to show relationships between different variables
 
 
-In the data pane on the left side you can see the column headers of the data we imported. You can simply create visualizations by drag and drop from the data pane in to the field title.
+In the data pane on the left side you can see the column headers of the data we imported. You can simply create visualizations by drag and drop from the data pane in to the field title.<br/>
+![](/research/Images/Show_Me.PNG)
+
 
  
 
