@@ -84,7 +84,18 @@ If your analysis depends on single data source, this step may not be necessary. 
 ## Task 2 Create Visualizations
 
 There are many types of possible visualizations, for example block diagrams or maps.
-In the data pane on the left side you can see the column headers of the data we imported. You can simply create visualizations by drag and drop from the data pane in to the field title
+In the data pane on the left side you can see the column headers of the data we imported. You can simply create visualizations by drag and drop from the data pane in to the field title.
+
+Tableau is enriched with many charts and graphs. And, transforming data into an effective visualization is the first steps towards making your data make an impact on your analysis. This depends heavily on the type of visualization you choose, data you have on hand and trend you want to see.  So, it is important to smoothly integrate data and visualization types to get a better insight about your data.
+The most widely used graphs and charts are<br/>
+-	Bar Chart- Charts mainly designed to quickly compare data across categories, highlight differences and reveal historical highs and lows.   
+-	Line Chart- mostly used to show continuous evaluations of data 
+-	Pie Chart- are useful to add details to other visualizations 
+-	Maps- Are particularly important to visualize location data
+-	Scatter plot- is important to show relationships between different variables
+
+ 
+
 
 ### Task 2.1 Create a world map
 
