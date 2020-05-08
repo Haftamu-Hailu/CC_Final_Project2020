@@ -54,7 +54,13 @@ Understand the data, to explore suitability for analysis
 To import locally stored data into tableau workspace follow the following steps:
 1. Create  new workbook
 2. Click on the file menu and select open
-3. Navigate to the file location and import it.
+3. Navigate to the data location and import it.
+4. Drag to the workspace area and start exploring.
+
+ To start analysing the data , it is good idea to understand your data formats. The following icons represent the different data types in tableau.
+ 
+ ![](/research/Images/Data_Icons.PNG)
+ 
 
 
 ### Task 1.3 Verifying that data was correctly loaded
