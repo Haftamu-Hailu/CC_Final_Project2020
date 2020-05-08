@@ -32,6 +32,7 @@ Tableau provides many tools which are important for various user cases:
 
 # Tableau Data Sources
 
+![](/research/Images/Data_Sources.PNG)
 
 
 ## Task 0
