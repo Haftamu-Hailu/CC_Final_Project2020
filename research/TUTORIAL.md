@@ -32,7 +32,7 @@ Tableau provides many tools which are important for various user cases:
 
 # Tableau Data Sources
 
-One of the biggest advantage of Tableau over other business intelligence tools is the ability to connect to various data soureces and providesa platform to perform edge catching visualizations. As we can see from the below figure tableau easily connect simple Excel files, JSON, CSV files, to SAP HANA, Spark SQL, IBM DB2 and many countless data sources and formats. 
+One of the biggest advantage of Tableau over other business intelligence tools is the ability to connect to various data soureces and providesa platform to perform edge catching visualizations.The figure below clearly indicates that tableau works with disparate data sources.
 
 ![](/research/Images/Data_Sources.PNG)
 
