@@ -121,6 +121,7 @@ Another visualization which is useful to gain insight into our data
 #### Task 2.1.3 Apply filters and colors
 Dragging and dropping the icon country/region over color we can colorize the different lines. Now to filter for individual country you once again enable show filter and 
 ![](/research/Images/trend1.png)
+![](/research/Images/trend2.png)
 
 ## Task 3 Create a Dashboard
 We can combine multiple visualizations as a dashboard.
