@@ -91,7 +91,7 @@ The most widely used graphs and charts are<br/>
 -	Bar Chart- Charts mainly designed to quickly compare data across categories, highlight differences and reveal historical highs and lows.   
 -	Line Chart- mostly used to show continuous evaluations of data 
 -	Pie Chart- are useful to add details to other visualizations 
--	Maps- Are particularly important to visualize location data
+-	Maps- Are particularly important to visualize location and geosptial data
 -	Scatter plot- is important to show relationships between different variables
 
 
