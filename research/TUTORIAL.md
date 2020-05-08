@@ -131,9 +131,10 @@ The shadow area in the line graph represents the forecasted values for May 2020.
 Steps
 1.	Drag and drop required dimensions and measures into the rows and columns section
 2.	Drag and drop country into the filter section and select US and show the filter 
-3.	Drag and drop states/province  into the cards  color section and show the filter
-![](/research/Images/Trend_US_State.PNG)
+3.	Drag and drop states/province  into the cards  color section and show the filter.<br/>
 
+![](/research/Images/Trend_US_State.PNG)
+     Figure 1: Number of cases and deaths of US states
 ## Task 4 Create a Dashboard
 We can combine multiple visualizations as a dashboard.
 With the visualizations
