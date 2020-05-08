@@ -98,7 +98,7 @@ The most widely used graphs and charts are<br/>
 In the data pane on the left side you can see the column headers of the data we imported. You can simply create visualizations by drag and drop from the data pane in to the field title.<br/>
 ![](/research/Images/Show_Me.PNG)
 
-* One very nice  featuer about Tableau is that it selects the best visualization for your data.*  
+*One very nice  featuer about Tableau is that it selects the best visualization for your data.*  
 
 
  
