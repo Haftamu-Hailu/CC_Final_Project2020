@@ -74,7 +74,7 @@ Apply normalizations
 If your analysis depends on single data source, this step may not be necessary. But If you are doing on multiple files you have to follow the provided steps.
 1. Drop the the source files into working book
 2. Specify the columns to join on 
-3. Join the files using four join methods
+3. Join the files by selecting anyone of the following join types
   - Full Join
   - Outer Join
   - Right Join
