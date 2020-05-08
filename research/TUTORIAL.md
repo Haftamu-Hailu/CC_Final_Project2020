@@ -81,25 +81,44 @@ If your analysis depends on single data source, this step may not be necessary. 
   - left Join
 
 
-## Task 2 Create a Visualization
+## Task 2 Create Visualizations
 
-### Task 2.1 Decide which dimension or measure you want to use
+There are many types of possible visualizations, for example block diagrams or maps.
+In the data pane on the left side you can see the column headers of the data we imported. You can simply create visualizations by drag and drop from the data pane in to the field title
 
+### Task 2.1 Create a world map
 
-### Task 2.2 Drag your columns and rows into the sheet 
-
-
-### Task 2.3 Choose the type of visualization 
-
-
-### Task 2.4 Apply filters
+On obvious question we could try to answer with our data is, how did covid 19 spread around the world.
+If you are unsure which type of visualization might be applicable to analyze the given data the 'Show Me' button on the top right corner is a good tool to explore your options. To use this functionality drag a header from the data pane to into the row or colum section. 
 
 
-### Task 2.5 Add effects(color, formating)
+#### Task 2.1.1 Drag your columns and rows into the sheet 
+In our case let's take date as columns and countries for size in marks
+Insert Image
+At the moment the granularity for date is set to years which is not helpful in our case. Set it to days because the data we imported is already representing sums on a daily basis.
+Insert Image
+### Task 2.1.2 Choose the type of visualization 
+Clicking on the 'Show Me' button on the top right corner you can see all the option
 
 
-### Task 2.6 Save your graph
+### Task 2.1.3 Apply filters
+Taking a look at the map we generated we see a lot of dots with the value 0. We can exclude values by a filter. To do that click on the sum confirmed field and enable show filter. Now you can see a slider on the right hand side of the window in the legend. You can either use the slider or click on the numbers above to modify the value. Let us exclude the zero values by setting the minimum number of confirmed cases to 1. 
+Insert image
 
+### Task 2.2 Create a trendline
+
+Another question we may ask is how is the trend for individual countries of over time?
+To investigate this question you can create a graph displaying trendline of deaths confirmed and recovered filtered after individual countries.
+Another visualization which is useful to gain insight into our data 
+
+#### Task 2.1.1 Drag your columns and rows into the sheet 
+
+#### Task 2.1.2 Choose the type of visualization 
+
+
+#### Task 2.1.3 Apply filters and colors
+Dragging and dropping the icon country/region over color we can colorize the different lines. Now to filter for individual country you once again enable show filter and 
 ## Task 3 Create a Dashboard
-
+We can combine multiple visualizations as a dashboard.
+With the visualizations
 
