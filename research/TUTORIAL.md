@@ -104,33 +104,26 @@ If you are unsure which type of visualization might be applicable to analyze the
 
 
 #### Task 2.1.1 Drag your columns and rows into the sheet 
-In our case let's take date as columns and countries for size in marks
+In our case let's take date as columns, countries and sum of confirmed cases for size in marks. Now you can see all possible options how to display your data by clicking on the 'Show Me' button on the top right corner. Select the map. This selection will generate one world map for every day in our data, presenting the cumulative confirmed infections of every country per day.
 ![](/research/Images/world_map1.png)
 At the moment the granularity for date is set to years which is not helpful in our case. Set it to days because the data we imported is already representing sums on a daily basis.
 ![](/research/Images/world_map2.png)
 
-### Task 2.1.2 Choose the type of visualization 
-Clicking on the 'Show Me' button on the top right corner you can see all the option
-
-
-### Task 2.1.3 Apply filters
-Taking a look at the map we generated we see a lot of dots with the value 0. We can exclude values by a filter. To do that click on the sum confirmed field and enable show filter. Now you can see a slider on the right hand side of the window in the legend. You can either use the slider or click on the numbers above to modify the value. Let us exclude the zero values by setting the minimum number of confirmed cases to 1. 
+### Task 2.1.2 Apply filters
+Taking a look at the map we generated we see a lot of dots with the value 0. We can exclude these values by a filter. To do that click on the sum confirmed field and enable show filter. Now you can see a slider on the right hand side of the window in the legend. You can either use the slider or click on the numbers above to modify the value. Let us exclude the zero values by setting the minimum number of confirmed cases to 1. 
 ![](/research/Images/world_map3.png)
 
 
 ### Task 2.2 Create a trendline
 
-Another question we may ask is how is the trend for individual countries of over time?
+Another question we may ask is how are individual countries developing over time?
 To investigate this question you can create a graph displaying trendline of deaths confirmed and recovered filtered after individual countries.
-Another visualization which is useful to gain insight into our data 
 
 #### Task 2.1.1 Drag your columns and rows into the sheet 
-
-#### Task 2.1.2 Choose the type of visualization 
-
+In the same way as before drag and drop the desired attributes into columns, once more the data in days. For rows select deaths, confirmed cases (confirmed) and recovered. 
 
 #### Task 2.1.3 Apply filters and colors
-Dragging and dropping the icon country/region over color we can colorize the different lines. Now to filter for individual country you once again enable show filter and 
+Dragging and dropping the icon country/region over color we can colorize the different lines. You can change the color scheme by clicking on the color button as you see fit. Now to filter for individual country you once again enable show filter. Enabling a filters displays a long list which is taking a lot of space in the legend. By expanding the icon in the top right corner in the country/region box we can transform the filterlist to for example a dropdown menu with multiple values. First unselect All, then select a few countries of your choice for example China, Italy, Spain and the US.
 ![](/research/Images/trend1.png)
 ![](/research/Images/trend2.png)
 
