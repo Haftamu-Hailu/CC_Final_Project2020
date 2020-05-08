@@ -76,10 +76,10 @@ If your analysis depends on single data source, this step may not be necessary. 
 2. Specify the columns to join on 
 3. Join the files by selecting anyone of the following join types
   - Full Join
-  - Outer Join
+  - Outer Join 
   - Right Join
   - left Join
-
+    ![](/research/Images/Join_types.PNG)
 
 ## Task 2 Create Visualizations
 
