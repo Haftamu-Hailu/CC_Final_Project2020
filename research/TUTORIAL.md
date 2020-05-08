@@ -123,7 +123,17 @@ Dragging and dropping the icon country/region over color we can colorize the dif
 ![](/research/Images/trend1.png)
 ![](/research/Images/trend2.png)
 
-## Task 3 Create a Dashboard
+ ## Task 3: More Specific visualization
+ 
+If you are interested in to visualize COVIF 19 spread for a specific country or state, it is possible to focus on small part of the data.
+This visualization focuses on the number of cases and deaths on the different US states in order to see the trends how COVID-19 spread over time in various US states.  One of the great features that Tableau providing us is the capability forecasting based on existing data. We made a forecast of the number of deaths and cases for one month based on four months data.
+The shadow area in the line graph represents the forecasted values for May 2020.
+Steps
+1.	Drag and drop required dimensions and measures into the rows and columns section
+2.	Drag and drop country into the filter section and select US and show the filter 
+3.	Drag and drop states/province  into the cards  color section and show the filter
+
+## Task 4 Create a Dashboard
 We can combine multiple visualizations as a dashboard.
 With the visualizations
 
