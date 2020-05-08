@@ -30,6 +30,9 @@ Tableau provides many tools which are important for various user cases:
 
 # Tableau features
 
+![](/research/Images/Tableau_Features.PNG)
+
+
 # Tableau Data Sources
 
 One of the biggest advantage of Tableau over other business intelligence tools is the ability to connect to various data soureces and providesa platform to perform edge catching visualizations.The figure below clearly indicates that tableau works with disparate data sources.
