@@ -60,10 +60,12 @@ To import locally stored data into tableau workspace follow the following steps:
  To start analysing the data , it is good idea to understand your data formats. The following icons represent the different data types in tableau.
  
  ![](/research/Images/Data_Icons.PNG)
-### Measures and Dimensions in Tableau.
+##### Measures and Dimensions in Tableau.
 
-From the figure, we can see different symbols. Basically all data in Tableau are categorized as a measure or dimensions 
-Measures contain quantitative values that you can measure and these fields necessary to perform aggregation. On the other hand, dimensions contain qualitative values and affect the level of detail in the visualization such as slicing, and drill down operations
+From the above figure, we can see different symbols which corresponds to different data types. All data in tableau are categorized either as a measure or a dimension.
+**Measures** contain quantitative values that you can measure and use these fields necessary to perform various aggregation.<br/>
+**Dimensions**,on the other hand, contain qualitative values. Dimensions are used to categorize, segment, and reveal the details in the data and determine the level of visualizations such as slicing, and drill down operations.<br/>
+When you import data tableau automatically categorize each fileds into dimensions and measures, but user can customize it.
 
 
 
