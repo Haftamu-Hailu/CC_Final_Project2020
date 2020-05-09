@@ -30,9 +30,14 @@ Tableau provides many tools which are important for various user cases:
 
 For preparting the tutorial we use both Tableau Desktop and Tableau Online 
 
-# Tableau features
+# Tableau Features
+
+Why we use Tableau where there are a lot of tools available to perform data visualization? <br/> 
+Tableau is greatly used because any kind of data can be analyzed very quickly and it is used to explore data with limitless visual analytics. Moreover, without deep technical knowledge, we can perform starting from simple to advanced analytics by using its drag and drop functionally.
 
 ![](/research/Images/Tableau_Features.PNG)
+
+  Figure: Tableau Features 
 
 
 # Tableau Data Sources
