@@ -43,6 +43,9 @@ Tableau is one of the most popular and powerful data visualizations tools which 
 
 ### Why Tableau outperforms other BI tools
 ![](/research/Images/Tableau_Why.PNG)
+### Gartner’s 2020 Magic Quadrant
+
+![](/research/Images/Tableau_2020_Rank.PNG)
 
 # 4. Tableau Products
 
@@ -117,7 +120,7 @@ To start analysing the data , it is good idea to understand your data formats. T
  
 ![](/research/Images/Data_Icons.PNG)
 
-##### Measures and Dimensions in Tableau.
+##### Measures and Dimensions in Tableau
 
 From the above figure, we can see different symbols which corresponds to different data types. Any data imported into tableau are categorized either as a measure or a dimension.
 **Measures** contain quantitative values that you can measure and use these fields necessary to perform various aggregation.<br/>
@@ -155,7 +158,6 @@ In the data pane on the left side you can see the column headers of the data we 
 *One very nice  feature about Tableau is that by default it selects the convenient visualization type(charts/graphs) for your data based on the selected selected measures and dimensions.*  
 
 ### Task 2.1 Create a world map
-
 
 An obvious question we could try to answer with our data is, how did covid 19 spread around the world.
 The first step to create a new visualization is to create a new sheet in your workbook, click on the respective icon on the bottom or press ctrl+alt+t. If you are unsure which type of visualization might be applicable to analyze the given data the 'Show Me' button on the top right corner is a good tool to explore your options. To use this functionality drag a header from the data pane to into the row or colum section. 
@@ -237,4 +239,8 @@ Resources
 1. https://intellipaat.com/blog/what-is-tableau/
 2. https://evolytics.com/blog/tableau-product-best/
 3. https://www.educba.com/data-visualization-with-tableau/
+4. https://www.tableau.com/covid-19-coronavirus-data-resources
+5. https://www.tableau.com/learn/get-started
+
+
 
