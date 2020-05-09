@@ -48,6 +48,7 @@ All Tableau products provides a similar functionality with a subtle difference ,
     2. Distribution – who do you want to see your dashboard and how will you share it with them? <br/>
     3. Automation – do you need your work to update automatically on a refresh schedule?<br/>
     4. Security – do you require on premise level security or can your work be saved in the cloud?<br/>
+    
 
 For preparting the tutorial we use both Tableau Desktop and Tableau Online 
 
