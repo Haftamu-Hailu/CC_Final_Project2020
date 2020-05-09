@@ -28,6 +28,8 @@ Tableau provides many tools which are important for various user cases:
 - Tableau Reader: Let you read files saved in Tableau Desktop.
 - Tableau Public: This is a light verison of Tableau Desktop
 
+For preparting the tutorial we use both Tableau Desktop and Tableau Online 
+
 # Tableau features
 
 ![](/research/Images/Tableau_Features.PNG)
