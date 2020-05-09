@@ -1,13 +1,13 @@
 # Explore Data with Tableau
 Table of content
 1. Introduction 
-2. Data visualzation
-3. Tableau 
-4. Tableau products
-5. Tableau Features
-6. Tableau Data sourcee
-7. Analyzing COVID-19 Data using Tableau
+2. Data visualzation with Tableau
+3. Tableau products
+4. Tableau Features
+5. Tableau Data sourcee
+6. Analyzing COVID-19 Data using Tableau
 
+# 1. Introduction 
 In this tutorial you will learn how to analyze data with [Tableau](http://tableau.com/) a leading Business Intelligence tool.
 Tableau is one of the fastest growing data visualization tool in the Business Intelligence industry.
 We choose tableau because it is perfect tool to create user friendly visualizations,
@@ -23,11 +23,12 @@ To address the data formats challenges taking into account the human interaction
 From a different perspective, as we all are working with data directly or indirectly,
 we firmly believe our work will benefit others to analyze their data in a better way to reach data driven decision.
 
-The first step is to acquire suitable data, for our purposes we selected the data from ... source.
+The tutorial is organzied as follows. The first step Introducing the user into tablea and data visualization concepts. Then to do data visualization we need to acquire suitable data, for our purposes we selected COVID-19 data. 
 In a second step we will familiarize the student with the basic functionality and user interface of the tool, uploading the data and generating basic visualizations.
 The third step a guide in deeper analysis generating more complex visualizations based on thorough analysis of the data.
+# 2.Tableau 
 
-# Tableau Product Suite
+# 3. Tableau Product Suite
 Tableau provides many tools which are important for various user cases:
 
 - Tableau Desktop: This product is made for individual use.
@@ -38,7 +39,7 @@ Tableau provides many tools which are important for various user cases:
 
 For preparting the tutorial we use both Tableau Desktop and Tableau Online 
 
-# Tableau Features
+# 4. Tableau Features
 
 Why we use Tableau where there are a lot of tools available to perform data visualization? <br/> 
 Tableau is greatly used because any kind of data can be analyzed very quickly and it is used to explore data with limitless visual analytics. Moreover, without deep technical knowledge, we can perform starting from simple to advanced analytics by using its drag and drop functionally.
@@ -48,13 +49,13 @@ Tableau is greatly used because any kind of data can be analyzed very quickly an
   Figure: Tableau Features 
 
 
-# Tableau Data Sources
+# 5. Tableau Data Sources
 
 One of the biggest advantage of Tableau over other business intelligence tools is the ability to connect to various data soureces and providesa platform to perform edge catching visualizations.The figure below clearly indicates that tableau works with disparate data sources.
 
 ![](/research/Images/Data_Sources.PNG)
 
-# Tableau Practical: Analayzing COVID-19 DataSet
+# 6. Tableau Practical: Analayzing COVID-19 DataSet
 
 In this section we explore the various featues of the tool to create eye cataching visualizations and dashboards. 
 ## Task 0
@@ -181,6 +182,7 @@ Steps
 ## Task 4 Create a Dashboard
 We can combine multiple visualizations as a dashboard.
 With the visualizations
+# 7. Integration with other tools
 
 Resources
 https://intellipaat.com/blog/what-is-tableau/
