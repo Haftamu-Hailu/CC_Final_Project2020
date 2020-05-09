@@ -20,12 +20,21 @@ Interacting with various data formats requires not only an appropriate analysis 
 but also choosing the right tool plays a vital role to obtain meaningful insights.
 To address the data formats challenges taking into account the human interaction many visualization tools are already in the market.
 
-From a different perspective, as we all are working with data directly or indirectly,
-we firmly believe our work will benefit others to analyze their data in a better way to reach data driven decision.
+#  Data Visualizaiton and why it is important
+Data visualization is the representation of data using visual elements such as such as charts, graphs, and maps. And this simplifies the way data is presented to the end users.More importantly, tn the Big Data world, data visualization enables decision-makers of any enterprise to look into analytical reports and understand concepts that might otherwise be difficult to grasp.
 
-The tutorial is organzied as follows. The first step Introducing the user into tablea and data visualization concepts. Then to do data visualization we need to acquire suitable data, for our purposes we selected COVID-19 data. 
-In a second step we will familiarize the student with the basic functionality and user interface of the tool, uploading the data and generating basic visualizations.
-The third step a guide in deeper analysis generating more complex visualizations based on thorough analysis of the data.
+## Why is data visualization important?
+ As the requirement of business organizations are changing radically, the need for information representation is changing as well.  Therefore, data visualization play vital role to
+ - Establish relationships
+ - Easily share information
+ - 
+ 
+ 
+ 
+. 
+
+
+
 # 2.Tableau 
 
 # 3. Tableau Product Suite
