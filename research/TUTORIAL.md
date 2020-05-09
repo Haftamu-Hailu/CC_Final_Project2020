@@ -223,7 +223,7 @@ Figure: Number of cases and deaths of US states
 To use our visualizations for monitoring or presentation we can combine multiple visualizations in a dashboard.
 Create a new dashboard by clicking the respective button at the bottom of the window right next to new sheets.
 You can add the visualizations created before by drag and drop the respective sheet from the left side. You can also add titles for the sheets you added as well for the whole dashboard. Furthermore, Tableau allows you to add various objects to customize your dashboard such as text, images or webpages. You will find these options in the bottom left corner. Your dashboard could look like this:
-![](/research/Images/dashboard.PNG)
+![](/research/Images/dashboard.png)
 
 # 7. Integration with other tools
 
