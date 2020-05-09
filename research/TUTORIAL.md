@@ -45,7 +45,8 @@ Tableau is one of the most popular and powerful data visualizations tools which 
 ![](/research/Images/Tableau_Why.PNG)
 ##### Gartner’s 2020 Magic Quadrant BI Rank
 
-![](/research/Images/Tableau_2020_Rank.png)
+![](/research/Images/Tableau_2020_Rank.PNG)
+![](/research/Images/Tableau_Ranking.PNG)
 
 # 4. Tableau Products
 
