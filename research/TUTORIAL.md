@@ -56,16 +56,16 @@ From the above three figure, we can easily understand that why Tableau is a popu
   #### Tableau success stories of Enterprises
  Digital transformation is now seen as a key strategic initiative and business intelligence tools have evolved to help companies make       the most of their data investments. Here we listed a few success stories of enterprises using tableau as a main BI tool
   
-  - HelloFresh centralized digital marketing reporting to increase conversions
-  -  Coca-Cola Bottling Company maximized operational efficiency
-      - Problem:Manual reporting processes restricted access to real-time sales and operations data.
-      - Solution: A self-service BI implementation fosters more effective collaborations between IT and business users that maximize the expertise of participants and saving over 260 hours a year. Report automation and other enterprise system integrations through mobile dashboards that provide timely, actionable information and a distinct competitive advantage. 
-  - Chipotle created a unified view of restaurant operations
-     - Problem: Disparate data sources hindered teams from seeing a unified view of restaurants.
-     - Solution: They replaced their traditional BI with a sself-service BI platform  which allowed them to create a centralized view of     operations so they can track restaurant operational effectiveness over 2,400 locations worldwide. 
- - Des Moines Public Schools identifies and helps at-risk students
-   - Problem: Manual Excel reporting couldn’t see up-to-date data like attendance, preventing timely intervention 
-   - Solution:Advanced analytics to improve dropout intervention rates to better understand the impact of various teaching methods on individual student outcomes
+  - **HelloFresh**: centralized digital marketing reporting to increase conversions
+  -  **Coca-Cola**: Bottling Company maximized operational efficiency
+      - **Problem**:Manual reporting processes restricted access to real-time sales and operations data.
+      - **Solution**: A self-service BI implementation fosters more effective collaborations between IT and business users that maximize the expertise of participants and saving over 260 hours a year. Report automation and other enterprise system integrations through mobile dashboards that provide timely, actionable information and a distinct competitive advantage. 
+  - **Chipotle**: created a unified view of restaurant operations
+     - **Problem**: Disparate data sources hindered teams from seeing a unified view of restaurants.
+     - **Solution**: They replaced their traditional BI with a sself-service BI platform  which allowed them to create a centralized view of     operations so they can track restaurant operational effectiveness over 2,400 locations worldwide. 
+ - **Des Moines**: Public Schools identifies and helps at-risk students
+   - **Problem**: Manual Excel reporting couldn’t see up-to-date data like attendance, preventing timely intervention 
+   - **Solution**:Advanced analytics to improve dropout intervention rates to better understand the impact of various teaching methods on individual student outcomes
   - Amazon, Walmart ,World Bank, Citigroup, New York Times, and LinkidIn also use tableau  for their BI platform. 
   
 
