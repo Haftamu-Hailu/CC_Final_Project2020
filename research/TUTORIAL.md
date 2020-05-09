@@ -211,7 +211,7 @@ Forcast is one of the great features offered by tableau which enables us to pred
 1. Turn on forcating feature from the Analysis menu
 2. Decide the forcasting granuality 
 
-![](/research/Images/Forcast.PNG)
+![](/research/Images/Forcast.png)
 
 
 
