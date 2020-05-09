@@ -150,7 +150,7 @@ In the data pane on the left side you can see the column headers of the data we 
 
 ![](/research/Images/Show_Me.PNG)
 
-*One very nice  featuer about Tableau is that it selects the best visualization for your data.*  
+*One very nice  feature about Tableau is that by default it selects the convenient visualization type(charts/graphs) for your data based on the selected selected measures and dimensions.*  
 
 ### Task 2.1 Create a world map
 
