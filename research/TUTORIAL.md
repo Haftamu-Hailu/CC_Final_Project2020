@@ -20,7 +20,7 @@ Interacting with various data formats requires not only an appropriate analysis 
 but also choosing the right tool plays a vital role to obtain meaningful insights.
 To address the data formats challenges taking into account the human interaction many visualization tools are already in the market.
 
-#  Data Visualizaiton and why it is important
+# 2.  What is Data Visualizaiton 
 Data visualization is the representation of data using visual elements such as such as charts, graphs, and maps. And this simplifies the way data is presented to the end users.More importantly, tn the Big Data world, data visualization enables decision-makers of any enterprise to look into analytical reports and understand concepts that might otherwise be difficult to grasp.
 
 ## Why is data visualization important?
