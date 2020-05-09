@@ -204,7 +204,17 @@ Steps
 
 ![](/research/Images/Trend_US_State.PNG)
 
-Figure: Number of cases and deaths of US states
+Figure: Number of Confirmed cases and deaths of US states
+## How to apply forcasting to visualization
+
+Forcast is one of the great features offered by tableau which enables us to predict the number of cases and deaths for future. This helps us to see how the number of deaths and cases will look like in the future. The forcast period depends on the history of the available data. In the COVID-19 data, We have data for since February 2020 upto now. so, we can able to perform forcast for the upcoming three months, but in the above graph we only showed forcast of one month to make things easier to understand. In tableau , by defualt, forcasting feature is not enablead, so, to do forcasting follow the following steps.
+1. Turn on forcating feature from the Analysis menu
+2. Decide the forcasting granuality 
+
+![](/research/Images/Forcast.PNG)
+
+
+
 
 ## Task 4 Create a Dashboard
 
