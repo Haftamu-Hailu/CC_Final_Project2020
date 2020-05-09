@@ -39,7 +39,9 @@ One of the biggest advantage of Tableau over other business intelligence tools i
 
 ![](/research/Images/Data_Sources.PNG)
 
+# Tableau Practical: Analayzing COVID-19 DataSet
 
+In this section we explore the various featues of the tool to create eye cataching visualizations and dashboards. 
 ## Task 0
 
 ### Create Trial account
