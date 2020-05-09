@@ -38,7 +38,7 @@ Data visualization is the representation of data using visual elements such as s
      
  
 # 2.Tableau 
-Tableau is one of the fastest growing data visualization tools currently being used in BI Industries. 
+It is one of the most popular and powerful  data visualizations tools which was created by Tableau software currently being used in BI Industries. It provides an easy drag and drop interface and it is the best way to change or transform the raw data into an easily understandable format with almost zero technical skills and coding knowledge.
 
 # 3. Tableau Product Suite
 Tableau provides many tools which are important for various user cases:
