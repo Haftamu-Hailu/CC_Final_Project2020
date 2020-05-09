@@ -265,6 +265,7 @@ Resources
 5. https://www.tableau.com/learn/get-started
 6. https://www.tableau.com/reports/gartner
 7. https://intellipaat.com/blog/7-enterprises-using-tableau-with-big-success/
+8. https://www.tableau.com/learn/articles/business-intelligence-examples
 
 
 
