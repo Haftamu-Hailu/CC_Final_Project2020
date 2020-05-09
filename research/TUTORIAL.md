@@ -1,11 +1,12 @@
 # Explore Data with Tableau
 Table of content
 1. Introduction 
-2. Data visualzation with Tableau
-3. Tableau products
-4. Tableau Features
-5. Tableau Data sourcee
-6. Analyzing COVID-19 Data using Tableau
+2. Data visualzation  
+3. Tableau
+4. Tableau products
+5. Tableau Features
+6. Tableau Data sourcee
+7. Analyzing COVID-19 Data using Tableau
 
 # 1. Introduction
 
@@ -16,13 +17,13 @@ Tableau is one of the fastest growing data visualization tool in the Business In
 We choose tableau because it is perfect tool to create user friendly visualizations, to perform in-depth analysis for disparate data sources and manage and customize visualizations to answer user queries.
 
 
-# 2.  What is Data Visualizaiton
+# 2.  What is Data Visualization?
 
 Data visualization is the representation of data using visual elements such as such as charts, graphs, and maps. Visualizations simplify the way data is presented to the end users. More importantly, in today's increasingly data driven world, data visualization enables decision-makers of any enterprise to look into analytical reports and understand concepts quickly which might be difficult to grasp otherwise.
 
 ## Why is data visualization important?
 
-Competition is tough in the current business landscape and challenging businesses with constant change which includes the need for information representation.
+Competition is tough in the current business landscape and challenging businesses with constant change which includes the need for information representation. It’s hard to think of a professional industry that doesn’t benefit from making data more understandable.
 A visual summary of information simplifies the identification of patterns and trends in sharp contrast to looking through thousands of rows spread over a spreadsheet or csv file. It's the way the human brain works. Since the purpose of data analysis is to gain insights, data is much more valuable when it is visualized.
  - Visualization helps people to understand things clearly and have a better insight in a topic
  - Data visualization helps us to identify relationships and patterns within data
@@ -35,14 +36,14 @@ A visual summary of information simplifies the identification of patterns and tr
  - Data visualization lets people know where they need to do an adjustment in their business to get a better result
      
  
-# 2.Tableau
+# 3.Tableau
 
 Tableau is one of the most popular and powerful data visualizations tools which is created by Tableau software currently being used in BI Industries. It provides an easy drag and drop interface making it the best way to change or transform the raw data into an easily understandable format with almost zero technical skills and coding knowledge.
 
 ### Why Tableau outperforms other BI tools
 ![](/research/Images/Tableau_Why.PNG)
 
-# 3. Tableau Product Suite
+# 4. Tableau Products
 
 Tableau provides many tools which are important for various user cases:
 
@@ -61,7 +62,7 @@ All Tableau products provide similar functionality with a subtle differences, be
 
 For preparting the tutorial we use both Tableau Desktop and Tableau Online.
 
-# 4. Tableau Features
+# 5. Tableau Features
 
 Why we use Tableau where there are a lot of tools available to perform data visualization? <br/> 
 Tableau is greatly used because any kind of data can be analyzed very quickly and it is used to explore data with limitless visual analytics. Moreover, without deep technical knowledge, we can perform starting from simple to advanced analytics by using its drag and drop functionally.
@@ -76,13 +77,13 @@ In addition to the features shown above, new tableau versions also contain the f
   
 
 
-# 5. Tableau Data Sources
+# 6. Tableau Data Sources
 
-One of the biggest advantages of Tableau over other business intelligence tools is its ability to connect to various data sources. Tableau provides a platform to perform edge catching for visualizations.The figure below clearly presents that tableau works with disparate data sources.
+One of the biggest advantages of Tableau over other business intelligence tools is its ability to connect to various data sources and ability to create advanced vidualization without any prior technical expertize  . Tableau provides a platform to perform edge catching for visualizations.The figure below clearly presents that tableau works with disparate data sources.
 
 ![](/research/Images/Data_Sources.PNG)
 
-# 6. Tableau Practical: Analayzing a COVID-19 DataSet
+# 7. Tableau Practical: Analayzing a COVID-19 DataSet
 
 In this section we explore the various features of the tool to create eye cataching visualizations and dashboards. 
 
