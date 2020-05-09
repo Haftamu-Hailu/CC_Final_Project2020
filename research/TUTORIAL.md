@@ -200,7 +200,8 @@ The shadow area in the line graph represents the forecasted values for May 2020.
 Steps
 1.	Drag and drop required dimensions and measures into the rows and columns section
 2.	Drag and drop country into the filter section and select US and show the filter 
-3.	Drag and drop states/province  into the cards  color section and show the filter.<br/>
+3.	Drag and drop states/province  into the cards  color section and show the filter
+4. In the filter area,select the states you want to see the past  and forcast trend.In our case we choose to focus only to five states (New York, New Jersey, Califorina, Texas, )<br/>
 
 ![](/research/Images/Trend_US_State.PNG)
 
@@ -213,7 +214,7 @@ Forcast is one of the great features offered by tableau which enables us to pred
 
 ![](/research/Images/Forcast.png)
 
-
+Figure: Applying forcast feature in Tableau
 
 
 ## Task 4 Create a Dashboard
