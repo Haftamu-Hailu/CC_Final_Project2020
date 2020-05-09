@@ -1,4 +1,12 @@
 # Explore Data with Tableau
+Table of content
+1. Introduction 
+2. Data visualzation
+3. Tableau 
+4. Tableau products
+5. Tableau Features
+6. Tableau Data sourcee
+7. Analyzing COVID-19 Data using Tableau
 
 In this tutorial you will learn how to analyze data with [Tableau](http://tableau.com/) a leading Business Intelligence tool.
 Tableau is one of the fastest growing data visualization tool in the Business Intelligence industry.
@@ -173,4 +181,7 @@ Steps
 ## Task 4 Create a Dashboard
 We can combine multiple visualizations as a dashboard.
 With the visualizations
+
+Resources
+https://intellipaat.com/blog/what-is-tableau/
 
