@@ -7,7 +7,8 @@ Table of content
 5. Tableau Data sourcee
 6. Analyzing COVID-19 Data using Tableau
 
-# 1. Introduction 
+# 1. Introduction
+
 Recently, human computer interaction is another discipline gaining a major attention from both users and data analyst experts. Interacting with various data formats requires not only an appropriate analysis technique
 but also choosing the right tool plays a vital role to obtain the desired insights.
 In this tutorial you will learn how to analyze data with [Tableau](http://tableau.com/) a leading Business Intelligence tool.
@@ -15,10 +16,12 @@ Tableau is one of the fastest growing data visualization tool in the Business In
 We choose tableau because it is perfect tool to create user friendly visualizations, to perform in-depth analysis for disparate data sources and manage and customize visualizations to answer user queries.
 
 
-# 2.  What is Data Visualizaiton 
+# 2.  What is Data Visualizaiton
+
 Data visualization is the representation of data using visual elements such as such as charts, graphs, and maps. Visualizations simplify the way data is presented to the end users. More importantly, in today's increasingly data driven world, data visualization enables decision-makers of any enterprise to look into analytical reports and understand concepts quickly which might be difficult to grasp otherwise.
 
 ## Why is data visualization important?
+
 Competition is tough in the current business landscape and challenging businesses with constant change which includes the need for information representation.
 A visual summary of information simplifies the identification of patterns and trends in sharp contrast to looking through thousands of rows spread over a spreadsheet or csv file. It's the way the human brain works. Since the purpose of data analysis is to gain insights, data is much more valuable when it is visualized.
  - Visualization helps people to understand things clearly and have a better insight in a topic
@@ -40,6 +43,7 @@ Tableau is one of the most popular and powerful data visualizations tools which 
 ![](/research/Images/Tableau_Why.PNG)
 
 # 3. Tableau Product Suite
+
 Tableau provides many tools which are important for various user cases:
 
 - Tableau Desktop: This product is made for individual use.
@@ -78,13 +82,13 @@ One of the biggest advantages of Tableau over other business intelligence tools 
 
 ![](/research/Images/Data_Sources.PNG)
 
-# 6. Tableau Practical: Analayzing COVID-19 DataSet
+# 6. Tableau Practical: Analayzing a COVID-19 DataSet
 
 In this section we explore the various features of the tool to create eye cataching visualizations and dashboards. 
 
 ## Task 0
 
-### Create Trial account
+### Create a Trial account
 
 Go to the [Tableau](https://www.tableau.com/products/cloud-bi?openExternal=true#online-reg-form) homepage and create a free trial account. If you are working on windows or mac download the software. For linux users there is no desktop version you can use the webversion which is sufficient for most of this tutorial except the forecasting part.
 
@@ -162,8 +166,9 @@ In the data pane on the left side you can see the column headers of the data we 
 
 ### Task 2.1 Create a world map
 
-On obvious question we could try to answer with our data is, how did covid 19 spread around the world.
-If you are unsure which type of visualization might be applicable to analyze the given data the 'Show Me' button on the top right corner is a good tool to explore your options. To use this functionality drag a header from the data pane to into the row or colum section. 
+
+An obvious question we could try to answer with our data is, how did covid 19 spread around the world.
+The first step to create a new visualization is to create a new sheet in your workbook, click on the respective icon on the bottom or press ctrl+alt+t. If you are unsure which type of visualization might be applicable to analyze the given data the 'Show Me' button on the top right corner is a good tool to explore your options. To use this functionality drag a header from the data pane to into the row or colum section. 
 
 #### Task 2.1.1 Drag your columns and rows into the sheet
 
@@ -215,8 +220,10 @@ Figure: Number of cases and deaths of US states
 
 ## Task 4 Create a Dashboard
 
-We can combine multiple visualizations as a dashboard.
-With the visualizations
+To use our visualizations for monitoring or presentation we can combine multiple visualizations in a dashboard.
+Create a new dashboard by clicking the respective button at the bottom of the window right next to new sheets.
+You can add the visualizations created before by drag and drop the respective sheet from the left side. You can also add titles for the sheets you added as well for the whole dashboard. Furthermore, Tableau allows you to add various objects to customize your dashboard such as text, images or webpages. You will find these options in the bottom left corner. Your dashboard could look like this:
+![](/research/Images/dashboard.PNG)
 
 # 7. Integration with other tools
 
