@@ -26,9 +26,11 @@ Data visualization is the representation of data using visual elements such as s
 ## Why is data visualization important?
  As the requirement of business organizations are changing radically, the need for information representation is changing as well. 
  A visual summary of information makes it easier to identify patterns and trends than looking through thousands of rows spread over a spreadsheet or csv file. It's the way the human brain works. Since the purpose of data analysis is to gain insights, data is much more valuable when it is visualized. 
+ - Data visualization provides us with a quick, clear understanding of the information
+ - The presentation of infographics and data enables us to identify relationships and patterns within digital assets
+ - Data storytelling allows us to develop a new business language so that we can share our story with others
+ - Visualizing data provides us with analysis at various levels of detail.
  - Data Visualization Amplifies your data
- - Data Visualization Provides Clearer Understanding
- - Data Visualization Aids Decision Analysis
  
 # 2.Tableau 
 
