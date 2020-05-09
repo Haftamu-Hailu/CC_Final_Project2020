@@ -226,7 +226,11 @@ You can add the visualizations created before by drag and drop the respective sh
 
 ![](/research/Images/dashboard.png)
 
-# 7. Integration with other tools
+# 7. COVID-19 Corona Virus Tracker
+
+COVID-19 case data is the most important data right now. Tech companies are working constantly to provide interactive visualization on the spread of coronavirus and let the users get informed about the impact of the pandemic. To contribute their fair share, tableau is providing a daily global coronavirus tracker to help you stay updated on the confirmed case, total deaths, and the places most impacted by this pandemic with an interactive dashboard at various granularity levels as shown below. 
+![](/research/Images/COVID-19.PNG)
+
 
 Resources
 1. https://intellipaat.com/blog/what-is-tableau/
