@@ -10,15 +10,10 @@ Table of content
 # 1. Introduction 
 In this tutorial you will learn how to analyze data with [Tableau](http://tableau.com/) a leading Business Intelligence tool.
 Tableau is one of the fastest growing data visualization tool in the Business Intelligence industry.
-We choose tableau because it is perfect tool to create user friendly visualizations,
-to perform in-depth analysis for disparate data sources and manage and customize visualizations to answer user queries.
-Nowadays, a lot of data is generated from multitude sources and data visualization is a way of representing data in a graphical way.
-Data visualization is very important because we human beings understand things that are visually well descriptive.
-Data visualization tools help us to get a deep insight of the data by exploring useful information. 
+We choose tableau because it is perfect tool to create user friendly visualizations, to perform in-depth analysis for disparate data sources and manage and customize visualizations to answer user queries.
 Recently, human computer interaction is another discipline gaining a major attention from both users and data analyst experts.
 Interacting with various data formats requires not only an appropriate analysis technique
-but also choosing the right tool plays a vital role to obtain meaningful insights.
-To address the data formats challenges taking into account the human interaction many visualization tools are already in the market.
+but also choosing the right tool plays a vital role to obtain the desired insights.
 
 # 2.  What is Data Visualizaiton 
 Data visualization is the representation of data using visual elements such as such as charts, graphs, and maps. And this simplifies the way data is presented to the end users.More importantly, tn the Big Data world, data visualization enables decision-makers of any enterprise to look into analytical reports and understand concepts that might otherwise be difficult to grasp.
