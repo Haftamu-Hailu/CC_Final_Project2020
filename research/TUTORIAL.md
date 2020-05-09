@@ -61,6 +61,11 @@ Tableau is greatly used because any kind of data can be analyzed very quickly an
 ![](/research/Images/Tableau_Features.PNG)
 
   Figure: Tableau Features 
+  
+  In addition to the above featuers ,  new tableau versions also contain the following features<br/>
+  
+  ![](/research/Images/New_Features.PNG)
+  
 
 
 # 5. Tableau Data Sources
@@ -104,7 +109,9 @@ To import locally stored data into tableau workspace follow the following steps:
 From the above figure, we can see different symbols which corresponds to different data types. Any data imported into tableau are categorized either as a measure or a dimension.
 **Measures** contain quantitative values that you can measure and use these fields necessary to perform various aggregation.<br/>
 **Dimensions**,on the other hand, contain qualitative values. Dimensions are used to categorize, segment, and reveal the details in the data and determine the level of visualizations such as slicing, and drill down operations.<br/>
-When you import data tableau automatically categorize each fileds into dimensions and measures, but user can customize it.
+When you import data tableau automatically categorize each fileds into dimensions and measures, but user can customize it. When the data is successfully imported the data will looks like as depicted below  
+
+![](/research/Images/Dimenisions_Measures.PNG)
 
 
 
