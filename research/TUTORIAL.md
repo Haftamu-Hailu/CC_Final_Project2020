@@ -7,6 +7,7 @@ Table of content
 5. Tableau Features
 6. Tableau Data sourcee
 7. Analyzing COVID-19 Data using Tableau
+8. Tableau COVID-19 Global Tracker
 
 # 1. Introduction
 
@@ -226,9 +227,9 @@ You can add the visualizations created before by drag and drop the respective sh
 
 ![](/research/Images/dashboard.png)
 
-# 7. COVID-19 Corona Virus Tracker
+# 8. Tableau COVID-19 Global Tracker Dashboard
 
-COVID-19 case data is the most important data right now. Tech companies are working constantly to provide interactive visualization on the spread of coronavirus and let the users get informed about the impact of the pandemic. To contribute their fair share, tableau is providing a daily global coronavirus tracker to help you stay updated on the confirmed case, total deaths, and the places most impacted by this pandemic with an interactive dashboard at various granularity levels as shown below. 
+COVID-19 case data is the most important data right now. BI and tech companies in general are working tirelessly to provide interactive visualization on the spread of coronavirus and let the users get informed about the pandemic to reduce the impact as much as possible. To contribute their fair share, Tableau is providing a daily global coronavirus tracker to help you stay updated on the confirmed case, total deaths, and the places most impacted by this pandemic with an interactive dashboard at various granularity levels as shown below.<br/> 
 ![](/research/Images/COVID-19.PNG)
 
 
