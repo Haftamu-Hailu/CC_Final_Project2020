@@ -33,6 +33,7 @@ Data visualization is the representation of data using visual elements such as s
  - Data Visualization Amplifies your data
  
 # 2.Tableau 
+Tableau is one of the fastest growing data visualization tools currently being used in BI Industries. 
 
 # 3. Tableau Product Suite
 Tableau provides many tools which are important for various user cases:
