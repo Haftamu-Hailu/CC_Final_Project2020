@@ -41,7 +41,7 @@ A visual summary of information simplifies the identification of patterns and tr
 
 Tableau is one of the most popular and powerful data visualizations tools which is created by Tableau software currently being used in BI Industries. It provides an easy drag and drop interface making it the best way to change or transform the raw data into an easily understandable format with almost zero technical skills and coding knowledge.
 
-### Why Tableau outperforms other BI tools
+##### Tableau recognized as a Leader in the 2020 Gartner Magic Quadrant for Analytics and Business Intelligence Platforms
 ![](/research/Images/Tableau_Why.PNG)
 ##### Gartner’s 2020 Magic Quadrant BI tools ranking
 
@@ -49,7 +49,16 @@ Tableau is one of the most popular and powerful data visualizations tools which 
 ####: Top 5 BI tools Evoluation
 ![](/research/Images/Tableau_Ranking.png)
 
-From the above three figure, we can easily understand that why Tableau is a popular BI tool.  
+From the above three figure, we can easily understand that why Tableau is a popular BI tool.  Within 5 years period, Tableau takes biggest share in the BI industry. 
+  Enterprises using tableau with big success
+  - Amazon
+  - LinkedIn
+  - Adobe
+  - Walmart
+  - World Bank
+  - Citigroup
+  - New York Times 
+  - Nike and Deloitte
 
 # 4. Tableau Products
 
@@ -79,7 +88,7 @@ Tableau is greatly used because any kind of data can be analyzed very quickly an
 
 Figure: Tableau Features 
   
-In addition to the features shown above, new tableau versions also contain the following features<br/>
+In addition to the features shown above, newer tableau versions also contain the following additional features. <br/>
   
 ![](/research/Images/New_Features.PNG)
   
@@ -245,6 +254,9 @@ Resources
 3. https://www.educba.com/data-visualization-with-tableau/
 4. https://www.tableau.com/covid-19-coronavirus-data-resources
 5. https://www.tableau.com/learn/get-started
+6. https://www.tableau.com/reports/gartner
+7. https://intellipaat.com/blog/7-enterprises-using-tableau-with-big-success/
+
 
 
 
