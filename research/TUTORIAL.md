@@ -126,18 +126,6 @@ When you import data tableau automatically categorize each fileds into dimension
  
 Figure:Measures and Dimensions
 
-### Task 1.3 Verifying that data was correctly loaded
-
-Delete?!
-
-### Task 1.4 Is the data suitable for analysis?
-Move content to 1.1
-Delete?!
-
-### Task 1.4 Transforming the data so that it fits your purpose
-Apply normalizations
-I am not sure what to write about this.
-Delete?!
 
 #### Combine Data from different sources:
 If your analysis depends on single data source, this step may not be necessary. However, in reality you easily get in the situation of dealing with multiple files. In this case to follow the provided steps are required.
