@@ -112,8 +112,8 @@ From the above figure, we can see different symbols which corresponds to differe
 When you import data tableau automatically categorize each fileds into dimensions and measures, but user can customize it. When the data is successfully imported the data will looks like as depicted below  
 
 ![](/research/Images/Dimenisions_Measures.PNG)
-
-
+ 
+ Figure:Measures and Dimensions
 
 ### Task 1.3 Verifying that data was correctly loaded
 
