@@ -43,11 +43,11 @@ Tableau provides many tools which are important for various user cases:
 - Tableau Reader: Let you read files saved in Tableau Desktop.
 - Tableau Public: This is a light verison of Tableau Desktop.<br/>
 
-All Tableau products provides a similar functionality with a subtle difference ,beacuase the various products are designed to address different use cases. And as a user to decide which product best suits your need, the following set of question helps a lot. <br/>
-    1. Connectivity – what data sources do you need to access?
-    2. Distribution – who do you want to see your dashboard and how will you share it with them?
-    3. Automation – do you need your work to update automatically on a refresh schedule?
-    4. Security – do you require on premise level security or can your work be saved in the cloud?
+All Tableau products provides a similar functionality with a subtle difference ,beacuase the various products are designed to address different use cases. And as a user to decide which product suits your need, consider taking the following question into account . <br/>
+    1. Connectivity – what data sources do you need to access?<br/>
+    2. Distribution – who do you want to see your dashboard and how will you share it with them? <br/>
+    3. Automation – do you need your work to update automatically on a refresh schedule?<br/>
+    4. Security – do you require on premise level security or can your work be saved in the cloud?<br/>
 
 For preparting the tutorial we use both Tableau Desktop and Tableau Online 
 
