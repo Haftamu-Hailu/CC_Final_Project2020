@@ -86,7 +86,7 @@ In this section we explore the various features of the tool to create eye catach
 
 ### Create Trial account
 
-Go to the [Tableau](https://www.tableau.com/products/cloud-bi?openExternal=true#online-reg-form) homepage and create a free trial account. You can either download the software or use its webversion which is sufficient for this tutorial.
+Go to the [Tableau](https://www.tableau.com/products/cloud-bi?openExternal=true#online-reg-form) homepage and create a free trial account. If you are working on windows or mac download the software. For linux users there is no desktop version you can use the webversion which is sufficient for most of this tutorial except the forecasting part.
 
 ## Task 1 Prepare your Data
 
@@ -160,17 +160,13 @@ In the data pane on the left side you can see the column headers of the data we 
 
 *One very nice  featuer about Tableau is that it selects the best visualization for your data.*  
 
-
- 
-
-
 ### Task 2.1 Create a world map
 
 On obvious question we could try to answer with our data is, how did covid 19 spread around the world.
 If you are unsure which type of visualization might be applicable to analyze the given data the 'Show Me' button on the top right corner is a good tool to explore your options. To use this functionality drag a header from the data pane to into the row or colum section. 
 
+#### Task 2.1.1 Drag your columns and rows into the sheet
 
-#### Task 2.1.1 Drag your columns and rows into the sheet 
 In our case let's take date as columns, countries and sum of confirmed cases for size in marks. Now you can see all possible options how to display your data by clicking on the 'Show Me' button on the top right corner. Select the map. This selection will generate one world map for every day in our data, presenting the cumulative confirmed infections of every country per day.
 
 ![](/research/Images/world_map1.png)
@@ -180,6 +176,7 @@ At the moment the granularity for date is set to years which is not helpful in o
 ![](/research/Images/world_map2.png)
 
 ### Task 2.1.2 Apply filters
+
 Taking a look at the map we generated we see a lot of dots with the value 0. We can exclude these values by a filter. To do that click on the sum confirmed field and enable show filter. Now you can see a slider on the right hand side of the window in the legend. You can either use the slider or click on the numbers above to modify the value. Let us exclude the zero values by setting the minimum number of confirmed cases to 1.
 
 ![](/research/Images/world_map3.png)
@@ -190,10 +187,12 @@ Taking a look at the map we generated we see a lot of dots with the value 0. We 
 Another question we may ask is how are individual countries developing over time?
 To investigate this question you can create a graph displaying trendline of deaths confirmed and recovered filtered after individual countries.
 
-#### Task 2.1.1 Drag your columns and rows into the sheet 
+#### Task 2.1.1 Drag your columns and rows into the sheet
+
 In the same way as before drag and drop the desired attributes into columns, once more the data in days. For rows select deaths, confirmed cases (confirmed) and recovered. 
 
 #### Task 2.1.3 Apply filters and colors
+
 Dragging and dropping the icon country/region over color we can colorize the different lines. You can change the color scheme by clicking on the color button as you see fit. Now to filter for individual country you once again enable show filter. Enabling a filters displays a long list which is taking a lot of space in the legend. By expanding the icon in the top right corner in the country/region box we can transform the filterlist to for example a dropdown menu with multiple values. First unselect All, then select a few countries of your choice for example China, Italy, Spain and the US.
 
 ![](/research/Images/trend1.png)
