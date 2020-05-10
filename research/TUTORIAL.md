@@ -80,10 +80,10 @@ Tableau provides many tools which are important for various user cases:
 - Tableau Public: This is a light verison of Tableau Desktop.<br/>
 
 All Tableau products provide similar functionality with a subtle differences, beacause these products are designed to address different use cases. As a user to decide which product fits your requirements best, consider taking the following questions into account. <br/>
-    1. Connectivity – what data sources do you need to access?<br/>
-    2. Distribution – who do you want to see your dashboard and how will you share it with them? <br/>
-    3. Automation – do you need your work to update automatically on a refresh schedule?<br/>
-    4. Security – do you require on premise level security or can your work be saved in the cloud?<br/>
+    1. Connectivity – What datasoure you want to access?<br/>
+    2. Distribution – with whom do you want to share your dashboards, public or private? <br/>
+    3. Automation – Instant update or schedule based update?<br/>
+    4. Security – what security level do you want to apply to your dashboards or visualization?<br/>
     
 
 For preparting the tutorial we use both Tableau Desktop and Tableau Online.
