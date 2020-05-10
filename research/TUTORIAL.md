@@ -67,7 +67,7 @@ From the above three figure, we can easily understand that why Tableau is a popu
    - **Problem**: Manual Excel reporting couldn’t see up-to-date data like attendance, preventing timely intervention 
    - **Solution**:Advanced analytics to improve dropout intervention rates to better understand the impact of various teaching methods on individual student outcomes
   - Amazon, Walmart ,World Bank, Citigroup, New York Times, and LinkidIn also use tableau  for their BI platform. 
-  [source] (https://www.tableau.com/learn/articles/business-intelligence-examples)
+  [source](https://www.tableau.com/learn/articles/business-intelligence-examples)
 
 # 4. Tableau Products
 
