@@ -41,7 +41,6 @@ A visual summary of information simplifies the identification of patterns and tr
 
 Tableau is one of the most popular and powerful data visualizations tools which is created by Tableau software currently being used in BI Industries. It provides an easy drag and drop interface making it the best way to change or transform the raw data into an easily understandable format with almost zero technical skills and coding knowledge.
 
-
 ![](/research/Images/Tableau_Why.PNG)
 
 
@@ -102,7 +101,7 @@ The following are some of the promising featues that makes tableau a leading BI 
 
 
   
-In addition to the above features, newer Tableau editions support the following additional features. <br/>
+In addition to the above features, newer Tableau editions support the following additional features [9](https://mindmajix.com/tableau-best-bi-tool). <br/>
   
 ![](/research/Images/New_Features.PNG)
   
@@ -273,6 +272,7 @@ Resources
 6. https://www.tableau.com/reports/gartner
 7. https://intellipaat.com/blog/7-enterprises-using-tableau-with-big-success/
 8. https://www.tableau.com/learn/articles/business-intelligence-examples
+9. https://mindmajix.com/tableau-best-bi-tool
 
 
 
