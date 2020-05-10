@@ -41,11 +41,11 @@ A visual summary of information simplifies the identification of patterns and tr
 
 Tableau is one of the most popular and powerful data visualizations tools which is created by Tableau software currently being used in BI Industries. It provides an easy drag and drop interface making it the best way to change or transform the raw data into an easily understandable format with almost zero technical skills and coding knowledge.
 
-##### Tableau recognized as a Leader in the 2020 Gartner Magic Quadrant for Analytics and Business Intelligence Platforms
+
 ![](/research/Images/Tableau_Why.PNG)
-##### Gartner’s 2020 Magic Quadrant BI tools ranking
 
 ![](/research/Images/Tableau_2020_Rank.jpg)
+[Tableau recognized as a Leader in the 2020 Gartner Magic Quadrant for Analytics and Business Intelligence Platforms](https://www.tableau.com/reports/gartner)
 
 ![](/research/Images/Tableau_Ranking.png)
 
