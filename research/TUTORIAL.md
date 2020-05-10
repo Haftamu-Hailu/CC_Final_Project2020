@@ -50,10 +50,11 @@ Tableau is one of the most popular and powerful data visualizations tools which 
 
 ![](/research/Images/Tableau_2020_Rank.jpg)
 
+Gartner Magic Quadrant for selected Business Intelligence 2020 update shows that  [Tableau](https://exceleratorbi.com.au/extract-numerical-data-points-from-an-image/) on the top of the pool.
 
 ![](/research/Images/Tableau_Ranking.png)
 
-Figure: Most common BI tools evoluation
+
 
 From the above three figure, we can easily understand that why Tableau is a popular BI tool.  As we can see from the animation within 5 years, Tableau shows an amazing progress in the BI industry and now it is the second most used tool next to microsoft power BI. 
   
