@@ -58,7 +58,7 @@ Figure: Most common BI tools evoluation
 From the above three figure, we can easily understand that why Tableau is a popular BI tool.  As we can see from the animation within 5 years, Tableau shows an amazing progress in the BI industry and now it is the second most used tool next to microsoft power BI. 
   
   #### Tableau success stories of Enterprises
- Digital transformation is now seen as a key strategic initiative and business intelligence tools have evolved to help companies make       the most of their data investments. Here we listed a few success stories of enterprises using tableau as a main BI tool
+ Digital transformation is now seen as a key strategic initiative and business intelligence tools have evolved to help companies make       the most of their data investments. Below we listed a few success stories of enterprises using tableau as a main BI solution [Tableau as BI tool](https://www.tableau.com/learn/articles/business-intelligence-examples)
   
   - **HelloFresh**: centralized digital marketing reporting to increase conversions
   -  **Coca-Cola**: Bottling Company maximized operational efficiency
@@ -71,7 +71,7 @@ From the above three figure, we can easily understand that why Tableau is a popu
    - **Problem**: Manual Excel reporting couldn’t see up-to-date data like attendance, preventing timely intervention 
    - **Solution**:Advanced analytics to improve dropout intervention rates to better understand the impact of various teaching methods on individual student outcomes
   - Amazon, Walmart ,World Bank, Citigroup, New York Times, and LinkidIn also use tableau  for their BI platform. 
-  [source](https://www.tableau.com/learn/articles/business-intelligence-examples)
+  
 
 # 4. Tableau Products
 
