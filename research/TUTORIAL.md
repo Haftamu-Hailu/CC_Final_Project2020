@@ -67,7 +67,7 @@ From the above three figure, we can easily understand that why Tableau is a popu
    - **Problem**: Manual Excel reporting couldn’t see up-to-date data like attendance, preventing timely intervention 
    - **Solution**:Advanced analytics to improve dropout intervention rates to better understand the impact of various teaching methods on individual student outcomes
   - Amazon, Walmart ,World Bank, Citigroup, New York Times, and LinkidIn also use tableau  for their BI platform. 
-  
+  [source] (https://www.tableau.com/learn/articles/business-intelligence-examples)
 
 # 4. Tableau Products
 
@@ -83,8 +83,7 @@ All Tableau products provide similar functionality with a subtle differences, be
     1. Connectivity – What datasoure you want to access?<br/>
     2. Distribution – with whom do you want to share your dashboards, public or private? <br/>
     3. Automation – Instant update or schedule based update?<br/>
-    4. Security – what security level do you want to apply to your dashboards or visualization?<br/>
-    
+    4. Security – what security level do you want to apply to your dashboards or visualization?<br/
 
 For preparting the tutorial we use both Tableau Desktop and Tableau Online.
 
