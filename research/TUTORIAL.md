@@ -45,7 +45,8 @@ Tableau is one of the most popular and powerful data visualizations tools which 
 ![](/research/Images/Tableau_Why.PNG)
 
 
-[Tableau recognized as a Leader in the 2020 Gartner Magic Quadrant for Analytics and Business Intelligence Platforms](https://www.tableau.com/reports/gartner)
+
+Tableau is recognized as a Leader in the 2020 Gartner Magic Quadrant for Analytics and Business Intelligence Platforms [source](https://www.tableau.com/reports/gartner)
 
 ![](/research/Images/Tableau_2020_Rank.jpg)
 
