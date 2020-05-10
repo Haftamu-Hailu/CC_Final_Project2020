@@ -98,7 +98,7 @@ Tableau is greatly used because any kind of data can be analyzed very quickly an
 
 ![](/research/Images/Tableau_Features.PNG)
 
-Figure: Tableau Features 
+ [Tableau Features](https://intellipaat.com/blog/what-is-tableau/)
   
 In addition to the above features, newer Tableau editions support the following additional features. <br/>
   
