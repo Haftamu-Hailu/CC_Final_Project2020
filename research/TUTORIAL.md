@@ -96,7 +96,7 @@ For preparting the tutorial we use both Tableau Desktop and Tableau Online.
 Why we use Tableau when there are a lot of tools available in the market to perform data visualization? <br/> 
 Tableau is greatly used because any kind of data can be analyzed very quickly and it is used to explore data with limitless visual analytics. Moreover, without deep technical knowledge, we can perform starting from simple to advanced analytics by using its drag and drop functionally.
 
-The following are some of the promising [Tableau featues](https://intellipaat.com/blog/what-is-tableau/) that makes tableau a number one visualization tool to build BI solutions.
+The following are some of the promising [Tableau features](https://intellipaat.com/blog/what-is-tableau/) that makes tableau a number one visualization tool to build BI solutions.
 
 ![](/research/Images/Tableau_Features.PNG)
 
