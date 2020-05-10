@@ -50,7 +50,7 @@ Tableau is one of the most popular and powerful data visualizations tools which 
 
 ![](/research/Images/Tableau_2020_Rank.jpg)
 
-Gartner Magic Quadrant for selected Business Intelligence 2020 update shows that  [Tableau](https://exceleratorbi.com.au/extract-numerical-data-points-from-an-image/) on the top of the pool.
+Also, the Gartner Magic Quadrant for selected business intelligence 2020 update shows that  [Tableau](https://exceleratorbi.com.au/extract-numerical-data-points-from-an-image/) is placed on the top of the pool.
 
 ![](/research/Images/Tableau_Ranking.png)
 
