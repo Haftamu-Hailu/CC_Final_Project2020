@@ -101,7 +101,7 @@ The following are some of the promising featues that makes tableau a leading BI 
 
 
   
-In addition to the above features, newer Tableau editions support the following additional features [9](https://mindmajix.com/tableau-best-bi-tool). <br/>
+In addition to the above features, newer Tableau editions support the following additional newerer [features](https://mindmajix.com/tableau-best-bi-tool). <br/>
   
 ![](/research/Images/New_Features.PNG)
   
