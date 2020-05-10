@@ -138,7 +138,7 @@ To import locally stored data into tableau workspace follow the following steps:
 3. Navigate to the data location and import it.
 4. Drag to the workspace area and start exploring.
 
-
+When you import data into tableau, the tableau [workspance](https://www.guru99.com/introduction-tableau-workspace-navigation.html) looks like as shown below. There might be some difference  when you use different tableau products and versions. 
 ![](/research/Images/Workspace.PNG)
 
 Figure: Tableau Interface(WorkSpace)
