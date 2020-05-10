@@ -39,7 +39,7 @@ A visual summary of information simplifies the identification of patterns and tr
  
 # 3.Tableau
 
-Tableau is one of the most popular and powerful data visualizations tools which is created by Tableau software currently being used in various BI industries as their number one choice. It provides an easy drag and drop interface making it the best way to change or transform the raw data into an easily understandable format with almost zero technical skills and coding knowledge. The following features and statstics can answer that why [Tableau](https://mindmajix.com/tableau-best-bi-tool) is choosen as their primary tool over others data visualization tools  
+Tableau is one of the most popular and powerful data visualizations tools which is created by Tableau software currently being used in various BI industries as their number one choice. It provides an easy drag and drop interface making it the best way to change or transform the raw data into an easily understandable format with almost zero technical skills and coding knowledge. The following features and statstics can answer that why [Tableau](https://mindmajix.com/tableau-best-bi-tool) is choosen as their primary tool over others visualization tools available on the market
 
 
 ![](/research/Images/Tableau_Why.PNG)
@@ -58,7 +58,7 @@ Figure: Most common BI tools evoluation
 From the above three figure, we can easily understand that why Tableau is a popular BI tool.  As we can see from the animation within 5 years, Tableau shows an amazing progress in the BI industry and now it is the second most used tool next to microsoft power BI. 
   
   #### Tableau success stories of Enterprises
- Digital transformation is now seen as a key strategic initiative and business intelligence tools have evolved to help companies make       the most of their data investments. Below we listed a few success stories of [enterprises] (https://www.tableau.com/learn/articles/business-intelligence-examples) using tableau as their BI platform 
+ Digital transformation is now seen as a key strategic initiative and business intelligence tools have evolved to help companies make       the most of their data investments. Below we listed a few success stories of [enterprises](https://www.tableau.com/learn/articles/business-intelligence-examples) using tableau as their BI platform 
   
   - **HelloFresh**: centralized digital marketing reporting to increase conversions
   -  **Coca-Cola**: Bottling Company maximized operational efficiency
