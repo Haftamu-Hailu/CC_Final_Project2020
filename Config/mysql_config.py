@@ -2,6 +2,6 @@
 
 host = "ccbda-rds.cpwaeopvnmcx.eu-west-1.rds.amazonaws.com"
 username = "admin"
-password = ""
+password = "ccbdadatabase"
 port = 3306
 dbname = "ccbda_rds"
