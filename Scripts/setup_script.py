@@ -1,5 +1,5 @@
 import os
-import Config.mysql_config as db
+import Simulator.Config.mysql_config as db
 # Our script for setting everything up online - should not be part of the github repo as it contains sensitive data
 
 
