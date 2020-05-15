@@ -1,6 +1,6 @@
 import pymysql
 import logging
-import mysql_config
+import Config.mysql_config as config
 
 UNKNOWN_DATABASE_ERROR = 1049
 TABLE_ALREADY_EXISTS_ERROR = 1050
@@ -10,12 +10,15 @@ class MySQLDatabase:
     """Database connection class."""
 
     def __init__(self):
-        self.host = mysql_config.db_host
-        self.username = mysql_config.db_user
-        self.password = mysql_config.db_password
-        self.port = mysql_config.db_port
-        self.dbname = mysql_config.db_name
+        self.host = config.host
+        self.username = config.username
+        self.password = config.password
+        self.port = config.port
+        self.dbname = config.dbname
         self.conn = None
+
+        self.create_overview_table()
+        self.insert_overview_data(155, 300, 50, 60, 10, 4)
 
     def open_connection(self):
         """Connect to MySQL Database."""
@@ -74,13 +77,6 @@ class MySQLDatabase:
 
         except pymysql.MySQLError as e:
             logging.error(e)
-
-
-if __name__=="__main__":
-    db = MySQLDatabase()
-    db.open_connection()
-    db.create_overview_table()
-    db.insert_overview_data(12, 300, 50, 60, 10, 4)
 
 
 
