@@ -1,6 +1,6 @@
 from collections import defaultdict
 import matplotlib.pyplot as plt
-from mysql_database import MySQLDatabase
+from Database.mysql_database import MySQLDatabase
 
 
 class Saver:
