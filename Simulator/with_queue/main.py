@@ -53,16 +53,16 @@ def send_message(message):
     print("sent message")
 
 def main():
-    sqs = boto3.client('sqs',region_name='eu-west-2',
-                    aws_access_key_id="AKIAWWEQQOG3FWVNHG4V", 
-                    aws_secret_access_key="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")
+    sqs = boto3.client('sqs',region_name='eu-west-1',
+                    aws_access_key_id="AKIAZBFSLRGGYX7XKBDO",
+                    aws_secret_access_key="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")
     
     #ditc = json.dumps({"initial_data" : {"contact_tracing" : 0, "total_agents": 10, "infected_agents": 1, "office_capacity" : 5, "home_capacity" : 2, "mortality_rate":0.04, "sick_days": 21, "free_symptoms_days":14 ,"total_days":30, "risk_home": 0.1, "risk_work": 0.03}})
     #send_message(ditc)
 
     while 1:
         time.sleep(1)
-        queue_url = 'https://sqs.eu-west-2.amazonaws.com/459864568246/sim_test'
+        queue_url = 'https://sqs.eu-west-1.amazonaws.com/620996823437/CCBDAProject-Queue.fifo'
         response = sqs.receive_message(
         QueueUrl=queue_url,
         AttributeNames=[
