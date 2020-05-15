@@ -60,8 +60,8 @@ def main():
     #ditc = json.dumps({"initial_data" : {"contact_tracing" : 0, "total_agents": 10, "infected_agents": 1, "office_capacity" : 5, "home_capacity" : 2, "mortality_rate":0.04, "sick_days": 21, "free_symptoms_days":14 ,"total_days":30, "risk_home": 0.1, "risk_work": 0.03}})
     #send_message(ditc)
 
-    while 1:
-        time.sleep(1)
+    while True:
+        time.sleep(10)
         queue_url = 'https://sqs.eu-west-1.amazonaws.com/620996823437/CCBDAProject-Queue.fifo'
         response = sqs.receive_message(
         QueueUrl=queue_url,
@@ -79,12 +79,13 @@ def main():
         #print(response)
         try:
             receipt_handle = response['Messages'][0]['ReceiptHandle']
-            print("Message received: ")
-            print(response['Messages'][0])
-            #sqs.delete_message(
-            #    QueueUrl=queue_url,
-            #    ReceiptHandle=receipt_handle
-            #)
+            print("Message received from queue")
+            #print(response['Messages'][0])
+            sqs.delete_message(
+                QueueUrl=queue_url,
+                ReceiptHandle=receipt_handle
+            )
+            print("Message deleted from queue")
             #print(response['Messages'][0]['Body'])
             argv = json.loads(response['Messages'][0]['Body'])
             #print(argv)
@@ -92,7 +93,8 @@ def main():
             #for i in argv['initial_data']:
             #        print(argv['initial_data'][i])
             start_simulation(argv['initial_data'])
-            send_message(argv)
+            print("Simulation started")
+            #send_message(argv)
             #continue
         except KeyError as e:
             print(repr(e))
