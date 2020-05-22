@@ -34,12 +34,24 @@ class Simulator:
         self.current_day += 1
 
     def save_status(self):
-        currently_infected_agents = sum(1 if agent.is_infected else 0 for agent in self.agent_array)
         total_infected_agents = sum(1 if agent.has_been_infected else 0 for agent in self.agent_array)
+        currently_infected_agents = sum(1 if agent.is_infected else 0 for agent in self.agent_array)
         currently_symptomatic_agents = sum(1 if agent.has_symptoms else 0 for agent in self.agent_array)
         total_isolated_agents = sum(1 if agent.is_isolated else 0 for agent in self.agent_array)
         dead_agents = sum(1 if not agent.is_alive else 0 for agent in self.agent_array)
-        self.saver.save_overview(self.current_day, currently_infected_agents, total_infected_agents, currently_symptomatic_agents,total_isolated_agents, dead_agents)
+
+        self.saver.save_overview("total_infected_agents", total_infected_agents)
+        self.saver.save_overview("currently_infected_agents", currently_infected_agents)
+        self.saver.save_overview("currently_symptomatic_agents", currently_symptomatic_agents)
+        self.saver.save_overview("total_isolated_agents", total_isolated_agents)
+
+        print(f"Day: {self.current_day} "
+              f"Currently infected agents: {currently_infected_agents} "
+              f"Total agents with symptoms: {currently_symptomatic_agents} "
+              f"Total agents that has been infected: {total_infected_agents} "
+              f"Total isolated agents: {total_isolated_agents} "
+              f"Total dead agents: {dead_agents}")
+
 
     def simulate_infections(self, location, current_day):
         not_isolated = lambda agent: not agent.is_isolated

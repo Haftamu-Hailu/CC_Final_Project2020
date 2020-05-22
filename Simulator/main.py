@@ -29,7 +29,7 @@ if RUN_FROM_TERMINAL:
 
 else:  # ToDo: Put this in a YAML-file
     enable_contact_tracing = False  # Enable contact tracing
-    total_agents = 1000000  # Number of Agents
+    total_agents = 1000  # Number of Agents
     initially_infected_agents = 20  # Number of initially infected agents
     initially_healthy_agents = total_agents - initially_infected_agents  # Number of initially healthy agents
     office_capacity = 30  # Capacity of agents per office
