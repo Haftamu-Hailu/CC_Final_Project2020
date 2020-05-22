@@ -1,3 +1,5 @@
+import uuid
+
 import boto3
 from botocore.exceptions import ClientError
 import json
@@ -11,7 +13,8 @@ queue_url = 'https://sqs.eu-west-1.amazonaws.com/620996823437/CCBDAProject-Queue
 
 sender_email = 'marvidalsegura@gmail.com'
 
-def send_email(email):
+
+def send_email(email, simulation_id):
     SENDER = "Sender Name <{}>".format(sender_email)
     RECIPIENT = email
 
@@ -24,7 +27,8 @@ def send_email(email):
     BODY_TEXT = ("Infection Simulator Confirmation\r\n"
                  "Your simulation has started! "
                  "Soon you will receive an email with the results."
-                 )
+                 "This is your simulation id: {}"
+                 ).format(simulation_id)
 
     # The HTML body of the email.
     BODY_HTML = """<html>
@@ -32,9 +36,10 @@ def send_email(email):
     <body>
       <h1>Infection Simulator Confirmation</h1>
       <p>Your simulation has started! Soon you will receive an email with the results.</p>
+      <p>This is your simulation id: {}</p>
     </body>
     </html>
-                """
+                """.format(simulation_id)
 
     # The character encoding for the email.
     CHARSET = "UTF-8"
@@ -95,16 +100,27 @@ def lambda_handler(event, context):
     operation = event['requestContext']['http']['method']
     if operation == 'POST':
         body = event['body']
+        body_dict = json.loads(body)
+        user_email = body_dict['initial_data'].pop('user_email')
+        body = json.dumps(body_dict)
+        simulation_id = str(uuid.uuid4())
         response = sqs.send_message(
             QueueUrl=queue_url,
-            MessageAttributes={},
-            MessageGroupId='1',
-            MessageDeduplicationId='1',
+            MessageAttributes={
+                'Simulation_id': {
+                    'StringValue': simulation_id,
+                    'DataType': 'String'
+                },
+                'User_email': {
+                    'StringValue': user_email,
+                    'DataType': 'String'
+                }
+            },
+            MessageGroupId='Initial_data',
+            MessageDeduplicationId=simulation_id,
             MessageBody=body
         )
-        body_dict = json.loads(body)
-        print(body_dict['initial_data']['user_email'])
-        send_email(body_dict['initial_data']['user_email'])
+        send_email(user_email, simulation_id)
         return respond(None, response)
     else:
         return respond(ValueError('Unsupported method {}'.format(operation)))

@@ -35,14 +35,23 @@
     </div>
 </nav>
 <main role="main">
-    <br>
     <div class="container">
-        <div class="jumbotron">
-          <h1 class="display-4">Hello to the infection simulator!</h1>
-          <p class="lead">Choose if you want to start a simulation or get your results:</p>
-          <hr class="my-4">
-          <a href="initial_data_form.html" class="btn btn-primary">New simulation</a>
-          <a href="results.html" class="btn btn-primary">Results</a>
+        <div class="form-content">
+                <div class="from-header">
+                    <br/>
+                    <h5 class="from-title">Provide the simulation id to get the results:</h5>
+                    <br/>
+                </div>
+                <div class="from-body">
+                    <form id="simulatorGetResults" role="form">
+                        <h4 class="text-primary">Simulation Id</h4>
+                        <div class="form-group">
+                            <input type="text" class="form-control col-md-6" id="simulation_id" placeholder="1234abcd-abcd-abcd-abcd-1234abcd1234">
+                        </div>
+                        <br/>
+                        <button type="submit" class="btn btn-primary">Get the results</button>
+                    </form>
+                </div>
         </div>
         <hr>
         <footer id="footer">
