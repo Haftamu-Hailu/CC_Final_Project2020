@@ -14,13 +14,6 @@ class Simulator:
         self.saver = saver
         self.simulation_id = simulation_id
 
-    def lambda_simulation(self, api_gateway, location_type):
-        data = {"location_type": location_type,
-                "simulation_id": self.simulation_id,
-                "current_day": self.current_day
-                }
-        response = requests.post(api_gateway, json=data)
-
     # Amount of time per step
     def step(self):
         # Simulate infections in each location

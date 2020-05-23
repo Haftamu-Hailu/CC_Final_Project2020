@@ -1,4 +1,4 @@
-# Config file containing credentials for RDS MySQL instance
+C.# Config file containing credentials for RDS MySQL instance
 
 host = "ccbda-project-rds.cadpkk0zdpr3.eu-west-1.rds.amazonaws.com"
 username = "admin"
