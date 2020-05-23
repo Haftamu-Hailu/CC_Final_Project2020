@@ -24,14 +24,10 @@ class Simulator:
     # Amount of time per step
     def step(self):
         # Simulate infections in each location
-        api_gateway = "https://en2u8ea22e.execute-api.eu-west-1.amazonaws.com/default/simulate_infections"
-        threads = []
         for location_type in self.locations:  # TODO: This is a place for paralellization
-            x = threading.Thread(target=self.lambda_simulation, args=(api_gateway, location_type))
-            threads.append(x)
-            x.start()
-        for thread in threads:
-            thread.join()
+            locations = self.locations[location_type]
+            for location in locations:
+                self.simulate_infections(location, self.current_day)
 
         # Update the status of each agent
         for agent in self.agent_array:  # TODO: This is a place for paralellization
