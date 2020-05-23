@@ -36,23 +36,44 @@
 </nav>
 <main role="main">
     <div class="container">
-        <div class="form-content">
+            <div id="form-content" class="form-content">
+                    <div class="from-header">
+                        <br/>
+                        <h5 class="from-title">Provide the simulation id to get the results:</h5>
+                        <br/>
+                    </div>
+                    <div class="from-body">
+                        <form id="simulatorGetResults" role="form">
+                            <h4 class="text-primary">Simulation Id</h4>
+                            <div class="form-group">
+                                <input type="text" class="form-control col-md-6" id="simulation_id" placeholder="1234abcd-abcd-abcd-abcd-1234abcd1234">
+                            </div>
+                            <br/>
+                            <button type="submit" class="btn btn-primary">Get the results</button>
+                        </form>
+                    </div>
+            </div>
+            <div id="results-content" class="results-content" style="display: none">
                 <div class="from-header">
                     <br/>
-                    <h5 class="from-title">Provide the simulation id to get the results:</h5>
+                    <h5 class="from-title">Your results:</h5>
                     <br/>
                 </div>
-                <div class="from-body">
-                    <form id="simulatorGetResults" role="form">
-                        <h4 class="text-primary">Simulation Id</h4>
-                        <div class="form-group">
-                            <input type="text" class="form-control col-md-6" id="simulation_id" placeholder="1234abcd-abcd-abcd-abcd-1234abcd1234">
-                        </div>
-                        <br/>
-                        <button type="submit" class="btn btn-primary">Get the results</button>
-                    </form>
-                </div>
-        </div>
+                <table class="table" id="results-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Currently infected</th>
+                            <th scope="col">Total infected</th>
+                            <th scope="col">Symptomatic people</th>
+                            <th scope="col">Total isolated</th>
+                            <th scope="col">Total dead</th>
+                        </tr>
+                    </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+            </div>
         <hr>
         <footer id="footer">
             <div class="row">
@@ -67,6 +88,30 @@
         </footer>
     </div>
 </main>
+
+<script>
+function myFunction() {
+  var results_content = "<div class=\"form-content\">\n" +
+      "                    <div class=\"from-header\">\n" +
+      "                        <br/>\n" +
+      "                        <h5 class=\"from-title\">Provide the simulation id to get the results:</h5>\n" +
+      "                        <br/>\n" +
+      "                    </div>\n" +
+      "                    <div class=\"from-body\">\n" +
+      "                        <form id=\"simulatorGetResults\" role=\"form\">\n" +
+      "                            <h4 class=\"text-primary\">Simulation Id</h4>\n" +
+      "                            <div class=\"form-group\">\n" +
+      "                                <input type=\"text\" class=\"form-control col-md-6\" id=\"simulation_id\" placeholder=\"1234abcd-abcd-abcd-abcd-1234abcd1234\">\n" +
+      "                            </div>\n" +
+      "                            <br/>\n" +
+      "                            <button type=\"submit\" class=\"btn btn-primary\">Get the results</button>\n" +
+      "                        </form>\n" +
+      "                    </div>\n" +
+      "            </div>"
+  document.getElementById("content").innerHTML = results_content;
+}
+</script>
+
 <!-- Jquery Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Bootstrap core Scripts -->

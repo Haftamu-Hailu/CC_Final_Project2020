@@ -1,5 +1,6 @@
 (function ($) {
-    apiUrl = 'https://9nkxihjvv1.execute-api.eu-west-1.amazonaws.com/default/CCBDAProject-SQS_And_SNS';
+    apiUrl1 = 'https://9nkxihjvv1.execute-api.eu-west-1.amazonaws.com/default/CCBDAProject-SQS_And_SNS';
+    apiUrl2 = 'https://fuhw6g25tb.execute-api.eu-west-1.amazonaws.com/default/CCBDAProject-RDSConnect';
 
     // Form submit
     $("#simulatorSetUpForm").submit(function (event) {
@@ -36,7 +37,7 @@
 
         // Call API Gateway POST Item
         $.ajax({
-            url: apiUrl,
+            url: apiUrl1,
             type: 'post',
             contentType: 'text/plain',
             data: JSON.stringify(data),
@@ -46,6 +47,40 @@
                 alert("Simulation started! You will receive an email shortly confirming your simulation.");
                 document.getElementById("simulatorSetUpForm").reset();
                 location.reload();
+            },
+            error: function (result) {
+                // show an error message
+                alert("Something wrong... Try again later.");
+            }
+        });
+    });
+
+    $("#simulatorGetResults").submit(function (event) {
+        event.preventDefault();
+        var simulation_id = $("#simulation_id").val();
+
+        var data = {simulation_id: simulation_id}
+
+        // Call API Gateway POST Item
+        $.ajax({
+            url: apiUrl2,
+            type: 'post',
+            contentType: 'text/plain',
+            data: JSON.stringify(data),
+            crossDomain: true,
+            processData: false,
+            success: function (result) {
+                $.each(result, function (i, item) {
+                    $('#results-table tr:last').after('<tr><td style="font-weight:bold">' + item['day'] + '</td>' +
+                        '<td>' + item['currently_infected'] + '</td>' +
+                        '<td>' + item['total_infected'] + '</td>' +
+                        '<td>' + item['sympt'] + '</td>' +
+                        '<td>' + item['total_isolated'] + '</td>' +
+                        '<td>' + item['total_dead'] + '</td></tr>');
+                });
+                document.getElementById("simulatorGetResults").reset();
+                document.getElementById("form-content").innerHTML = '';
+                document.getElementById("results-content").style.display = 'inline';
             },
             error: function (result) {
                 // show an error message
