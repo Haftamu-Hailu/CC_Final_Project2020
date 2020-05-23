@@ -2,12 +2,13 @@ import sys
 import logging
 import pymysql
 import json
+import rds_configuration
 
 #rds settings
-rds_host = "ccbdaproject-testing-1.cadpkk0zdpr3.eu-west-1.rds.amazonaws.com"
-name = "admin"
-password = "Pr0ject1"
-db_name = "innodb"
+rds_host = rds_configuration.host
+name = rds_configuration.username
+password = rds_configuration.password
+db_name = rds_configuration.dbname
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
