@@ -41,13 +41,16 @@ else:  # ToDo: Put this in a YAML-file
     risk_infection_home = 0.02  # Risk of infection at home
     risk_infection_work = 0.02  # Risk of infection at work
     verbose = True  # If we want printing during simulator run
+    simulation_id = "TEST" # TODO: initial_data['simulation_id']
 
 locations, agent_array = initialize(total_agents, initially_infected_agents, initially_healthy_agents,
                                     office_capacity, house_capacity, mortality_rate, total_days_sick,
                                     days_until_symptoms, total_days_simulated, risk_infection_home, risk_infection_work)
 
-saver = Saver(verbose)
-simulator = Simulator(enable_contact_tracing, locations, agent_array, saver)
+saver = Saver(verbose, simulation_id)
+simulator = Simulator(enable_contact_tracing, locations, agent_array, saver, simulation_id)
+
+#saver.initialize_db(locations, agent_array)
 
 while simulator.current_day <= total_days_simulated:
     simulator.step()

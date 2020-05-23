@@ -1,23 +1,38 @@
 import random as rn
+import requests
+import json
+import threading
 
 
 class Simulator:
-    def __init__(self, enable_contact_tracing, locations, agent_array, saver):
+    def __init__(self, enable_contact_tracing, locations, agent_array, saver, simulation_id):
         self.enable_contact_tracing = enable_contact_tracing
         self.locations = locations
         self.current_day = 0
         self.step_size = 1
         self.agent_array = agent_array
         self.saver = saver
+        self.simulation_id = simulation_id
+
+    def lambda_simulation(self, api_gateway, location_type):
+        data = {"location_type": location_type,
+                "simulation_id": self.simulation_id,
+                "current_day": self.current_day
+                }
+        response = requests.post(api_gateway, json=data)
+        print(f"{location_type}   {self.current_day} ")
 
     # Amount of time per step
     def step(self):
         # Simulate infections in each location
-        ## TODO: If we want more specific behavior from agents, they should move between the locations
+        api_gateway = "https://en2u8ea22e.execute-api.eu-west-1.amazonaws.com/default/simulate_infections"
+        threads = []
         for location_type in self.locations:  # TODO: This is a place for paralellization
-            locations = self.locations[location_type]
-            for location in locations:
-                self.simulate_infections(location, self.current_day)
+            x = threading.Thread(target=self.lambda_simulation, args=(api_gateway, location_type))
+            threads.append(x)
+            x.start()
+        for thread in threads:
+            thread.join()
 
         # Update the status of each agent
         for agent in self.agent_array:  # TODO: This is a place for paralellization

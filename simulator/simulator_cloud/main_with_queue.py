@@ -20,13 +20,17 @@ def start_simulation(initial_data, verbose=True):
     risk_infection_work = float(initial_data['risk_work'])  # Risk of infection at work
     verbose = bool(verbose)  # If we want printing during simulator run
 
+    simulation_id = "local_testing "# TODO: initial_data['simulation_id']
+
     locations, agent_array = initialize(total_agents, initially_infected_agents, initially_healthy_agents,
                                         office_capacity, house_capacity, mortality_rate, total_days_sick,
                                         days_until_symptoms, total_days_simulated, risk_infection_home,
                                         risk_infection_work)
 
-    saver = Saver(verbose)
+    saver = Saver(verbose, simulation_id)
     simulator = Simulator(enable_contact_tracing, locations, agent_array, saver)
+
+    saver.initialize_db(locations, agent_array)
 
     while simulator.current_day <= total_days_simulated:
         simulator.step()

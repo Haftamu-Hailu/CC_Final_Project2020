@@ -4,13 +4,13 @@ from Database.mysql_database import MySQLDatabase
 
 
 class Saver:
-    def __init__(self, verbose):
+    def __init__(self, verbose, simulation_id):
         """
         This class is meant as middleman-function - so it is easy to change where we want to store things without changing the simulator
         :param verbose: If we want to print the output
         """
         self.verbose = verbose
-        self.db = MySQLDatabase()
+        self.db = MySQLDatabase(simulation_id)
         self.overview = defaultdict(lambda: [])
         self.infections = []
 
@@ -32,3 +32,15 @@ class Saver:
             plt.plot(self.overview[key])
             plt.title(key)
             plt.show()
+
+    def initialize_db(self, locations, agent_array):
+        self.db.create_overview_table()
+        self.db.create_agent_table()
+        self.db.create_location_table()
+
+        for agent in agent_array:
+            self.db.insert_agent(agent)
+
+        for location_type in locations.keys():
+            for location in locations[location_type]:
+                self.db.insert_location(location)

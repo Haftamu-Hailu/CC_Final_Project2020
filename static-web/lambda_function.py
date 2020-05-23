@@ -21,10 +21,10 @@ def send_email(email, simulation_id):
     AWS_REGION = "eu-west-1"
 
     # The subject line for the email.
-    SUBJECT = "Infection Simulator Confirmation"
+    SUBJECT = "Infection simulator Confirmation"
 
     # The email body for recipients with non-HTML email clients.
-    BODY_TEXT = ("Infection Simulator Confirmation\r\n"
+    BODY_TEXT = ("Infection simulator Confirmation\r\n"
                  "Your simulation has started! "
                  "Soon you will receive an email with the results."
                  "This is your simulation id: {}"
@@ -34,7 +34,7 @@ def send_email(email, simulation_id):
     BODY_HTML = """<html>
     <head></head>
     <body>
-      <h1>Infection Simulator Confirmation</h1>
+      <h1>Infection simulator Confirmation</h1>
       <p>Your simulation has started! Soon you will receive an email with the results.</p>
       <p>This is your simulation id: {}</p>
     </body>

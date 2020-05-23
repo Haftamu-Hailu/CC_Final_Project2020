@@ -26,6 +26,7 @@ def initialize(total_agents, initially_infected_agents, initially_healthy_agents
         agent = Agent(id, True, days_until_symptoms, total_days_sick, mortality_rate)
         agent_array.append(agent)
 
+
     # Shuffle the list to mix infected and healthy agents
     rn.shuffle(agent_array)
 
@@ -34,16 +35,16 @@ def initialize(total_agents, initially_infected_agents, initially_healthy_agents
     number_of_homes = math.ceil(total_agents / house_capacity)
 
     number_of_offices = math.ceil(total_agents / office_capacity)
-    locations["Homes"] = [Home(house_capacity, risk_infection_home) for _ in range(number_of_homes)]
-    locations["Offices"] = [Office(office_capacity, risk_infection_work) for _ in range(number_of_offices)]
+    locations["Home"] = [Home(i, house_capacity, risk_infection_home) for i in range(number_of_homes)]
+    locations["Office"] = [Office(i, office_capacity, risk_infection_work) for i in range(number_of_offices)]
 
     print("-- Assign agents to households --")
     home_index = 0
-    current_home = locations["Homes"][home_index]
+    current_home = locations["Home"][home_index]
     for agent in agent_array:
         if current_home.full_capacity():
             home_index += 1
-            current_home = locations["Homes"][home_index]
+            current_home = locations["Home"][home_index]
 
         current_home.add_agent(agent)
         agent.set_home(current_home)
@@ -53,11 +54,11 @@ def initialize(total_agents, initially_infected_agents, initially_healthy_agents
 
     print("-- Assign agents to offices --")
     office_index = 0
-    current_office = locations["Offices"][office_index]
+    current_office = locations["Office"][office_index]
     for agent in agent_array:
         if current_office.full_capacity():
             office_index += 1
-            current_office = locations["Offices"][office_index]
+            current_office = locations["Office"][office_index]
 
         current_office.add_agent(agent)
         agent.set_office(current_office)
