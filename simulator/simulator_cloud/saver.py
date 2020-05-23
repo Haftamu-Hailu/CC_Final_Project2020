@@ -14,6 +14,7 @@ class Saver:
         self.overview = defaultdict(lambda: [])
         self.infections = []
 
+
     def save_overview(self, day, currently_infected_agents, total_infected_agents, currently_symptomatic_agents, total_isolated_agents, dead_agents):
         self.db.insert_overview_data(day, currently_infected_agents, total_infected_agents, currently_symptomatic_agents, total_isolated_agents, dead_agents)
         if self.verbose:
@@ -35,12 +36,12 @@ class Saver:
 
     def initialize_db(self, locations, agent_array):
         self.db.create_overview_table()
-        self.db.create_agent_table()
-        self.db.create_location_table()
+        #self.db.create_agent_table()
+        #self.db.create_location_table()
+        #
+        #for agent in agent_array:
+        #    self.db.insert_agent(agent)
 
-        for agent in agent_array:
-            self.db.insert_agent(agent)
-
-        for location_type in locations.keys():
-            for location in locations[location_type]:
-                self.db.insert_location(location)
+        #for location_type in locations.keys():
+        #    for location in locations[location_type]:
+        #        self.db.insert_location(location)

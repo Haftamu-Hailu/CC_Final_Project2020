@@ -44,7 +44,7 @@ class MySQLDatabase:
         """
         try:
             self.open_connection()
-            create_overview_query = f"CREATE TABLE {self.simulation_id}Overview(" + \
+            create_overview_query = f"CREATE TABLE Overview_{self.simulation_id}(" + \
                                                 """Day int(11) NOT NULL,
                                                  CurrInfectedA int(11) NOT NULL,
                                                  TotInfectedA int(11) NOT NULL,
@@ -146,7 +146,7 @@ class MySQLDatabase:
         """ Inserting Data Into Overview Table """
         try:
             self.open_connection()
-            insert_query = f"INSERT INTO Overview(Day, CurrInfectedA, TotInfectedA, Sympt_A, TotIsolatedA, TotDeadA) " \
+            insert_query = f"INSERT INTO Overview_{self.simulation_id}(Day, CurrInfectedA, TotInfectedA, Sympt_A, TotIsolatedA, TotDeadA) " \
                            f"VALUES ({day},{currently_infected_agents},{total_infected_agents}, {currently_symptomatic_agents},{total_isolated_agents},{dead_agents}) "
 
             cursor = self.conn.cursor()

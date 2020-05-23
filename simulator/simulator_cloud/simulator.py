@@ -20,7 +20,6 @@ class Simulator:
                 "current_day": self.current_day
                 }
         response = requests.post(api_gateway, json=data)
-        print(f"{location_type}   {self.current_day} ")
 
     # Amount of time per step
     def step(self):

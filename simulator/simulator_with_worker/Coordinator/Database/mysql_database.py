@@ -17,8 +17,7 @@ class MySQLDatabase:
         self.dbname = config.dbname
         self.conn = None
 
-        self.create_overview_table()
-        self.insert_overview_data(155, 300, 50, 60, 10, 4)
+
 
     def open_connection(self):
         """Connect to MySQL Database."""
@@ -55,7 +54,7 @@ class MySQLDatabase:
                                                  PRIMARY KEY (Day)) """
             cursor = self.conn.cursor()
             cursor.execute(create_overview_query)
-            logging.info("Overview Table created successfully")
+            print("Overview Table created successfully")
 
         except pymysql.MySQLError as e:
             logging.error(e)

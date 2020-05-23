@@ -20,7 +20,7 @@ def start_simulation(initial_data, verbose=True):
     risk_infection_work = float(initial_data['risk_work'])  # Risk of infection at work
     verbose = bool(verbose)  # If we want printing during simulator run
 
-    simulation_id = "local_testing "# TODO: initial_data['simulation_id']
+    simulation_id = initial_data['simulation_id'].replace("-", "_")
 
     locations, agent_array = initialize(total_agents, initially_infected_agents, initially_healthy_agents,
                                         office_capacity, house_capacity, mortality_rate, total_days_sick,
@@ -28,7 +28,7 @@ def start_simulation(initial_data, verbose=True):
                                         risk_infection_work)
 
     saver = Saver(verbose, simulation_id)
-    simulator = Simulator(enable_contact_tracing, locations, agent_array, saver)
+    simulator = Simulator(enable_contact_tracing, locations, agent_array, saver, simulation_id)
 
     saver.initialize_db(locations, agent_array)
 
@@ -61,11 +61,9 @@ def main():
                     aws_access_key_id="AKIAZBFSLRGGYX7XKBDO",
                     aws_secret_access_key="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")
     
-    #ditc = json.dumps({"initial_data" : {"contact_tracing" : 0, "total_agents": 10, "infected_agents": 1, "office_capacity" : 5, "home_capacity" : 2, "mortality_rate":0.04, "sick_days": 21, "free_symptoms_days":14 ,"total_days":30, "risk_home": 0.1, "risk_work": 0.03}})
-    #send_message(ditc)
 
     while True:
-        time.sleep(10)
+        time.sleep(3)
         queue_url = 'https://sqs.eu-west-1.amazonaws.com/620996823437/CCBDAProject-Queue.fifo'
         response = sqs.receive_message(
         QueueUrl=queue_url,
@@ -84,22 +82,18 @@ def main():
         try:
             receipt_handle = response['Messages'][0]['ReceiptHandle']
             print("Message received from queue")
-            #print(response['Messages'][0])
             sqs.delete_message(
                 QueueUrl=queue_url,
                 ReceiptHandle=receipt_handle
             )
             print("Message deleted from queue")
-            #print(response['Messages'][0]['Body'])
-            argv = json.loads(response['Messages'][0]['Body'])
-            #print(argv)
-            #print(argv)
-            #for i in argv['initial_data']:
-            #        print(argv['initial_data'][i])
-            start_simulation(argv['initial_data'])
+            initial_data = json.loads(response['Messages'][0]['Body'])["initial_data"]
+            simulation_id = response["Messages"][0]['MessageAttributes']["Simulation_id"]['StringValue']
+
+            initial_data["simulation_id"] = simulation_id
+            start_simulation(initial_data)
             print("Simulation started")
-            #send_message(argv)
-            #continue
+
         except KeyError as e:
             print(repr(e))
             print("Queue is empty")
