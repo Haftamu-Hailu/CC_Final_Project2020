@@ -3,12 +3,14 @@ import simulator_functions as worker
 import initializer as init
 import time
 import json
+import os
 
 queue_url_send = 'https://sqs.eu-west-2.amazonaws.com/459864568246/conf_queue'
 queue_url_receive = 'https://sqs.eu-west-2.amazonaws.com/459864568246/sim_test'
 sqs = boto3.client('sqs',region_name='eu-west-2',
-					aws_access_key_id="",
-					aws_secret_access_key="")
+				   aws_access_key_id=os.environ['access_id'],
+				   aws_secret_access_key=os.environ['access_key']
+				   )
 def main():
 	while True:
 		print("New While entered:::::::::::::::::::::::::::::::::::::::::::::::")
