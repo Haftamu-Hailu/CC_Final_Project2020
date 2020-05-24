@@ -60,7 +60,7 @@ def send_message(message):
 def main():
     sqs = boto3.client('sqs',region_name='eu-west-1',
                     aws_access_key_id=os.environ['access_id'],
-                    aws_secret_access_key=os.environ['access_key']
+                    aws_secret_access_key=os.environ['access_key'])
     
 
     while True:
