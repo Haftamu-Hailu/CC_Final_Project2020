@@ -1,9 +1,11 @@
 import boto3
 import time
 import json
+import os
+
 sqs = boto3.client('sqs',region_name='eu-west-2',
-                    aws_access_key_id="",
-                    aws_secret_access_key="")
+                    aws_access_key_id=os.environ['access_id'],
+                    aws_secret_access_key=os.environ['access_key'])
 
 
 queue_url_receive = 'https://sqs.eu-west-2.amazonaws.com/459864568246/conf_queue'

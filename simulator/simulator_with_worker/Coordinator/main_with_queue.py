@@ -4,6 +4,7 @@ import json
 #from initializer import initialize
 from simulator import Simulator
 from saver import Saver
+import os
 
 def start_simulation(initial_data, verbose=True):
     enable_contact_tracing = bool(initial_data['contact_tracing'])  # Enable contact tracing
@@ -36,8 +37,8 @@ def start_simulation(initial_data, verbose=True):
 
 def send_message(message):
     sqs = boto3.client('sqs',region_name='eu-west-2',
-                    aws_access_key_id="", 
-                    aws_secret_access_key="")
+                    aws_access_key_id=os.environ['access_id'],
+                    aws_secret_access_key=os.environ['access_key'])
     queue_url = 'https://sqs.eu-west-2.amazonaws.com/459864568246/conf_queue'
     sqs.send_message(
     QueueUrl=queue_url,
@@ -54,8 +55,8 @@ def send_message(message):
 
 def main():
     sqs = boto3.client('sqs',region_name='eu-west-2',
-                    aws_access_key_id="",
-                    aws_secret_access_key="")
+                    aws_access_key_id=os.environ['access_id'],
+                    aws_secret_access_key=os.environ['access_key'])
 
     
     #ditc = json.dumps({"initial_data" : {"contact_tracing" : 0, "total_agents": 10, "infected_agents": 1, "office_capacity" : 5, "home_capacity" : 2, "mortality_rate":0.04, "sick_days": 21, "free_symptoms_days":14 ,"total_days":30, "risk_home": 0.1, "risk_work": 0.03}})

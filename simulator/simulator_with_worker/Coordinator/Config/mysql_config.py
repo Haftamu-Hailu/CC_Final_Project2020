@@ -1,7 +1,8 @@
 # Config file containing credentials for RDS MySQL instance
+import os
 
-host = "test-db2.cum3wdeshheg.eu-west-2.rds.amazonaws.com"
-username = "jorrit"
-password = "g4txOVPcL9d84lRLoFcB"
-port = 3306
-dbname = "test2"
+host = os.environ['rds_host']
+username = os.environ['rds_user']
+password = os.environ['rds_pwd']
+port = os.environ['rds_port']
+dbname = os.environ['rds_db']

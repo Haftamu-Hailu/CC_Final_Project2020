@@ -1,7 +1,8 @@
-C.# Config file containing credentials for RDS MySQL instance
+# Config file containing credentials for RDS MySQL instance
+import os
 
-host = "ccbda-project-rds.cadpkk0zdpr3.eu-west-1.rds.amazonaws.com"
-username = "admin"
-password = "barcelona2020"
-port = 3306
-dbname = "ccbda_project_rds"
+host = os.environ['rds_host']
+username = os.environ['rds_user']
+password = os.environ['rds_pwd']
+port = os.environ['rds_port']
+dbname = os.environ['rds_db']
