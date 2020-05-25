@@ -15,14 +15,13 @@ with the technology. The increased difficulty as you got more familiar with Kafk
 was an extension to an earlier assignment so you already had most of the code available. In addition to this they had their own coding
 examples for the two exercies provided in case you got stuck.
 
-Here are three screenshots from when I was doing the exercise:
-![Example1](/research/Images/response1-example1.PNG)
-![Example2](/research/Images/response1-example2.PNG)
-![Plot](/research/Images/response1-plot.PNG)
-
 All in all, I think it was a very well-made tutorial which was easy to follow. They also included some relevant cases where Kafka has been used
 in production, which is nice since our examples more minimalistic.
 
 I give the grade 9.5 / 10.
 
+Here are three screenshots from when I was doing the exercise:
 
+![Example1](/research/Images/response1-example1.png)
+![Example2](/research/Images/response1-example2.png)
+![Plot](/research/Images/response1-plot.png)
